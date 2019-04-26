@@ -1,0 +1,51 @@
+.filter__mobile
+	.filter__mobile-content
+		form(action="#", method="post")#filterFormChecked
+			.filter__mobile-box.f_summer
+				.fm-title
+					.fm-close
+					span Ткани летней одежды
+				ul.fm-list
+					li
+						span.check-inputAll Все
+					li
+						input(type="checkbox", name="filterMobSummerClothes[]").check-input#checkMobSummer1
+						label(for='checkMobSummer1').label-btn Лен
+					li
+						input(type="checkbox", name="filterMobSummerClothes[]").check-input#checkMobSummer2
+						label(for='checkMobSummer2').label-btn Вискоза 
+					li
+						input(type="checkbox", name="filterMobSummerClothes[]").check-input#checkMobSummer3
+						label(for='checkMobSummer3').label-btn Хлопок
+				ul.fm-action
+					li
+						a(href="#").btn-cancel.btn Отмена
+					li
+						a(href="#").btn-apply.btn.btn-white ОК
+			// /.f_summer
+
+			.filter__mobile-box.f_outerwear
+				.fm-title
+					.fm-close
+					span Ткани верхней одежды
+				ul.fm-list
+					li
+						input(type="checkbox", name="filterMobOuterwear[]").check-input#outerwearMob1
+						label(for='outerwearMob1').label-btn Пальтовые ткани
+					li
+						input(type="checkbox", name="filterMobOuterwear[]").check-input#outerwearMob2
+						label(for='outerwearMob2').label-btn Плащевые ткани
+					li
+						input(type="checkbox", name="filterMobOuterwear[]").check-input#outerwearMob3
+						label(for='outerwearMob3').label-btn Экомех
+					li
+						input(type="checkbox", name="filterMobOuterwear[]").check-input#outerwearMob4
+						label(for='outerwearMob4').label-btn Дубленки
+				ul.fm-action
+					li
+						a(href="#").btn-cancel.btn Отмена
+					li
+						a(href="#").btn-apply.btn.btn-white ОК
+			// /.f_outerwear
+
+// /.filter__mobile	

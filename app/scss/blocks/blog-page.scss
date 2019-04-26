@@ -1,0 +1,135 @@
+/* стили для страницы БЛОГ */
+
+.blog-page {
+  padding: 0 18px;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  &__slider {
+    max-width: 600px;
+    margin: 0 auto 36px;
+
+    @include tablet {
+      max-width: initial;
+      margin-bottom: 49px;
+    }
+
+    @include desktop-start {
+      margin-bottom: 58px;
+    }
+
+    @include laptop {
+      margin-bottom: 70px;
+    }
+
+    @include desktop-wide {
+      margin-bottom: 118px;
+    }
+  }
+
+  &__content {
+
+    &::after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 35px;
+    overflow: hidden;
+
+    @include tablet {
+      width: calc((100% - 33px) / 2);
+      max-width: initial;
+      margin-bottom: 44px;
+    }
+
+    @include desktop-start {
+      width: calc((100% - 57px) / 2);
+      margin-bottom: 54px;
+    }
+
+    @include laptop {
+      width: calc((100% - 78px) / 2);
+      margin-bottom: 89px;
+    }
+
+    @include desktop-wide {
+      width: calc((100% - 202px) / 2);
+      margin-bottom: 107px;
+    }
+
+    &--left {
+      @include tablet {
+        float: left;
+      }
+    }
+
+    &--right {
+      @include tablet {
+        float: right;
+      }
+    }
+  }
+
+  &__item-part {
+
+    &:nth-child(2) {
+      margin-top: 35px;
+
+      @include tablet {
+        margin-top: 48px;
+      }
+
+      @include laptop {
+        margin-top: 93px;
+      }
+
+      @include desktop-wide {
+        margin-top: 112px;
+      }
+    }
+  }
+
+  & .title {
+
+    @include tablet {
+      margin-bottom: -10px;
+    }
+
+    @media (min-width: 1025px) {
+      margin-bottom: 5px;
+    }
+
+    @include laptop {
+      margin-bottom: 15px;
+    }
+
+    @include desktop-wide {
+      margin-bottom: 20px;
+    }
+  }
+
+  & .container {
+    padding-top: 8px;
+    clear: both;
+
+    @include tablet {
+      padding-top: 3px;
+    }
+
+    @include desktop-start {
+      padding-top: 14px;
+    }
+
+    @include laptop {
+      padding-top: 2px;
+    }
+  }
+}

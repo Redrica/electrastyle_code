@@ -1,0 +1,33 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body.loadSliders
+		include modules/header-auth
+
+		section.wrapper
+			.breadcrumb__container.hidden-xs
+				.container
+					ul.breadcrumb
+						li
+							a(href="#") Женская
+						li
+							a(href="#") Верхняя одежда
+						li Пальто
+			//-.breadcrumb__container
+			.catalog__container.container-opt
+				include modules/catalog-filter-auth
+				include pages/catalog-page-opt
+				include modules/catalog-bottom
+			// .catalog__container
+		// /.wrapper
+
+		include modules/footer-child
+		include modules/modal
+		include modules/fast-modal-auth
+		include modules/filter-mobile
+		include includes/foot
+		
+
+

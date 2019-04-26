@@ -1,0 +1,37 @@
+{
+  "name": "Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stanislav Morozovskiy",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp.spritesmith": "^6.9.0",
+    "imagemin-pngquant": "^5.0.1",
+    "jquery": "^3.2.1",
+    "normalize-css": "^2.3.1",
+    "select2": "^4.0.6-rc.1"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "natives": "^1.1.6",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}

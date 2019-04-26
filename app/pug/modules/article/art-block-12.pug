@@ -1,0 +1,28 @@
+//- блок с заглавным фото и двумя частями фото + текст. Фото - квадрат!
+.article__block-12.article__block
+	.article__img-box
+		picture
+			source(media="(max-width: 768px)", type="image/jpg", srcset="images/article/square_big_768.jpg")
+			source(media="(max-width: 1024px)", type="image/jpg", srcset="images/article/square_big_1024.jpg")
+			source(media="(max-width: 1799px)", type="image/jpg", srcset="images/article/square_big_1366.jpg")
+			img(src="images/article/square_big_1920.jpg", alt="#").img-responsive
+	.article__content-box
+		.article__content-wrapper.article__content-wrapper--img
+			picture
+				source(media="(max-width: 768px)", type="image/jpg", srcset="images/article/square_small_768.jpg")
+				source(media="(max-width: 1024px)", type="image/jpg", srcset="images/article/square_small_1024.jpg")
+				source(media="(max-width: 1799px)", type="image/jpg", srcset="images/article/square_small_1366.jpg")
+				img(src="images/article/square_small_1920.jpg", alt="#").img-responsive
+		.article__content-wrapper
+			p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+			p Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный
+	.article__content-box
+		.article__content-wrapper.article__content-wrapper--img
+			picture
+				source(media="(max-width: 768px)", type="image/jpg", srcset="images/article/square_small_768.jpg")
+				source(media="(max-width: 1024px)", type="image/jpg", srcset="images/article/square_small_1024.jpg")
+				source(media="(max-width: 1799px)", type="image/jpg", srcset="images/article/square_small_1366.jpg")
+				img(src="images/article/square_small_1920.jpg", alt="#").img-responsive
+		.article__content-wrapper
+			p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+			p Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный

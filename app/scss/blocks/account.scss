@@ -1,0 +1,132 @@
+/* страницы ЛИЧНОГО КАБИНЕТА, общие стили */
+
+.account {
+  position: relative;
+  clear: both;
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 12px;
+
+    @include tablet {
+      max-width: initial;
+      padding: 0;
+    }
+
+    @include laptop {
+      margin: 0;
+    }
+
+    @include desktop-start {
+      display: flex;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @include desktop-start {
+      flex-shrink: 0 ;
+      display: block;
+      width: 250px;
+      margin: 2px 0 0;
+      padding: 0;
+    }
+
+    @include laptop {
+      width: 350px;
+    }
+
+    @include desktop-full {
+      width: 430px;
+    }
+  }
+
+  &__list-item {
+
+    & a {
+      @include text(16px, 35px, 400);
+      text-transform: uppercase;
+      transition: 0.5s;
+
+      @include desktop-start {
+        font-size: 14px;
+        line-height: 30px;
+      }
+
+      @include laptop {
+        font-size: 18px;
+        line-height: 40px;
+      }
+
+      &:hover {
+        color: $beige;
+      }
+    }
+
+    &--active a {
+      color: $beige;
+    }
+  }
+
+  &__shops {
+
+    @include tablet {
+      max-width: 678px;
+    }
+
+    @include laptop {
+      max-width: initial;
+    }
+
+    @media (min-width: 1800px) {
+      max-width: 920px;
+    }
+  }
+
+  &__my-data {
+    width: 100%;
+
+    @include tablet {
+      max-width: 678px;
+      margin: 0 auto;
+    }
+
+    @include desktop-start {
+      margin: 0;
+    }
+  }
+
+  &__questions {
+    margin-top: 5px;
+  }
+}
+
+.account-title {
+
+  @include tablet {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  @include laptop {
+    margin-top: 2px;
+    margin-bottom: -16px;
+    font-size: 30px;
+    line-height: 48px;
+  }
+
+  @include desktop-full {
+    margin-top: 10px;
+    margin-bottom: -20px;
+    font-size: 36px;
+  }
+}
+
+.account-questions__top-link.back-modal {
+  left: 3px;
+}

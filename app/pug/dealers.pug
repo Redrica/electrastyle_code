@@ -1,0 +1,28 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body
+		include modules/header-auth
+
+		section.wrapper
+			.breadcrumb__container.hidden-xs
+				.container
+					ul.breadcrumb
+						li
+							a(href="#") Контакты
+						li Дилеры
+
+			.catalog__container
+				.visible-xs.mob-title.no-float
+					a(href="#").back-modal
+					span Дилеры
+				include pages/dealers-page
+
+		include modules/footer-child
+		include modules/modal
+		include modules/fast-modal
+		include modules/filter-mobile
+		include includes/foot
+		include includes/js-dealers

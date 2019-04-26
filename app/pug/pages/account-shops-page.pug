@@ -1,0 +1,59 @@
+include ../mixins/shop
+include ../mixins/input-field
+include ../mixins/select
+
+.catalog__content
+	.title.hidden-xs
+		.title-box
+			.h1.account-title Мои магазины
+	section.account
+		.container
+			.account__wrapper
+				include ../modules/account-menu
+				.my-shops.account__shops.shops-exists
+					.my-shops__header
+						p.my-shops__text Мы будем дарить Вам клиентов!
+						p.my-shops__text.my-shops__text--last Информация о Вашем магазине будет отображаться на странице «Где купить»!
+						a(href='#').my-shops__link-add
+							span Добавить магазин
+
+					form.my-shops__form.add-shop(action='#' method='#')
+						.add-shop__wrapper
+							.add-shop__fields
+								+select('add-shop__input', '', 'country-select', 'country-select', 'input-field__label--hidden', 'Страна', 'Выберите страну', 'Россия', 'Беларусь', 'Казахстан')
+								+select('add-shop__input', '', 'city-select', 'city-select', 'input-field__label--hidden', 'Город', 'Выберите город', 'Москва', 'Санкт-Петербург', 'Владивосток')
+								+input-field('add-shop__input', '', 'shop-name', 'text', 'shop-name', 'Магазин', 'input-field__label--hidden', '', 'Название магазина')
+								+input-field('add-shop__input', '', 'tc-name', 'text', 'tc-name', 'Торговый центр', 'input-field__label--hidden', '', 'Торговый центр')
+							.add-shop__image.img-upload
+								.img-upload__place.no-image
+								label.img-upload__btn.btn(for='img-upload') Загрузить
+									input.visually-hidden(id='img-upload' type='file' name="shop-logo" accept="image/*")
+								p.img-upload__tip 200 x 200 px
+
+						.add-shop__fields.add-shop__fields--bottom
+							.add-shop__address
+								+input-field('add-shop__input', '', 'street', 'text', 'street', 'Улица', 'input-field__label--hidden', '', 'Улица')
+								.add-shop__address-wrap
+									+input-field('add-shop__input', '', 'house', 'text', 'house', 'Дом', 'visually-hidden', '', 'Дом')
+									+input-field('add-shop__input', '', 'building', 'test', 'building', 'Строение', 'visually-hidden', '', 'Строение')
+							+input-field('add-shop__input', '', 'tel', 'tel', 'tel', '+7 (___) ___ - __ - __', '', '', 'Телефон')
+							+input-field('add-shop__input input-field--social', '', 'vk-social', 'url', 'vk-social', '', 'input-field__label--vk', 'Ваша страница Вконтакте', '')
+							+input-field('add-shop__input input-field--social', '', 'fb-social', 'url', 'fb-social', '', 'input-field__label--fb', 'Ваша страница на Фейсбуке', '')
+							+input-field('add-shop__input input-field--social', '', 'ig-social', 'url', 'ig-social', '', 'input-field__label--ig', 'Ваша страница в Инстаграме', '')
+
+							.add-shop__input.input-checkbox.input-checkbox--shops
+								input.visually-hidden(id='add-social' type='checkbox' name='add-social')
+								label.input-checkbox__label(for='add-social') Добавить соцсети ко&nbsp;всем магазинам
+							button.add-shop__submit.btn(type='submit') Сохранить
+					ul.my-shops__list
+						li.my-shops__item
+							+shop('магазин «теплая одежда»', 'м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, ул. Мира д 15', 'Митинская ул., 36 корпус 1, офис 405', 'images/shops-logo/shop-logo.png')
+						li.my-shops__item
+							+shop('магазин «теплая одежда»', 'м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, ул. Мира д 15', 'Митинская ул., 36 корпус 1, офис 405', 'images/shops-logo/shop-logo.png')
+						li.my-shops__item
+							+shop('магазин «теплая одежда»', 'м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, ул. Мира д 15', 'Митинская ул., 36 корпус 1, офис 405', 'images/shops-logo/shop-logo.png')
+						li.my-shops__item
+							+shop('магазин «теплая одежда»', 'м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, ул. Мира д 15', 'Митинская ул., 36 корпус 1, офис 405', 'images/shops-logo/shop-logo.png')
+					//- кнопка должна выводиться, если магазинов много
+					a.my-shops__all.btn.btn-white(href='#') Смотреть все
+				include ../modules/shop-del-pop

@@ -1,0 +1,33 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body
+		include modules/header
+
+		section.wrapper
+			.breadcrumb__container.hidden-xs
+				.container
+					ul.breadcrumb
+						li
+							a(href="#") Пальто
+						li Каталог тканей
+			//-.breadcrumb__container
+			.catalog__container
+				.visible-xs.mob-title
+					a(href="#").back-modal
+					span Каталог тканей				
+				include modules/catalog-materials-filter
+				include pages/catalog-page-materials
+			// .catalog__container
+		// /.wrapper
+
+		include modules/footer-child
+		include modules/modal
+		include modules/filter-materials-mobile
+		include includes/foot
+		script(src="js/slider-materials.js")
+		
+
+

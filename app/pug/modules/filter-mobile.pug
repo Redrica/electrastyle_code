@@ -1,0 +1,128 @@
+.filter__mobile
+	.filter__mobile-content
+		form(action="#", method="post")#filterFormChecked
+			.filter__mobile-box.f_cat
+				.fm-title
+					.fm-close
+					span Категории
+				ul.fm-list
+					li
+						input(type="radio", name="filterCatMob").radio-input#allCatMob
+						label(for='allCatMob').label-btn Все категории
+					li
+						input(type="radio", name="filterCatMob").radio-input#cat1Mob
+						label(for='cat1Mob').label-btn Пальто 
+					li
+						input(type="radio", name="filterCatMob").radio-input#cat2Mob
+						label(for='cat2Mob').label-btn Каракуль
+					li
+						input(type="radio", name="filterCatMob").radio-input#cat3Mob
+						label(for='cat3Mob').label-btn Дубленки
+					li
+						input(type="radio", name="filterCatMob").radio-input#cat4Mob
+						label(for='cat4Mob').label-btn Куртки
+					li
+						input(type="radio", name="filterCatMob").radio-input#cat5Mob
+						label(for='cat5Mob').label-btn Пуховик
+				ul.fm-action
+					li
+						a(href="#").btn-cancel.btn Отмена
+					li
+						a(href="#").btn-apply.btn.btn-white ОК
+			// /.f_cat
+
+			.filter__mobile-box.f_season
+				.fm-title
+					.fm-close
+					span Сезон
+				ul.fm-list
+					li
+						span.check-inputAll Все сезоны
+					li
+						input(type="checkbox", name="filterMobSeason[]").check-input#seasonMob1
+						label(for='seasonMob1').label-btn Зима
+					li
+						input(type="checkbox", name="filterMobSeason[]").check-input#seasonMob2
+						label(for='seasonMob2').label-btn Весна 
+					li
+						input(type="checkbox", name="filterMobSeason[]").check-input#seasonMob3
+						label(for='seasonMob3').label-btn Лето
+					li
+						input(type="checkbox", name="filterMobSeason[]").check-input#seasonMob4
+						label(for='seasonMob4').label-btn Осень
+				ul.fm-action
+					li
+						a(href="#").btn-cancel.btn Отмена
+					li
+						a(href="#").btn-apply.btn.btn-white ОК
+			// /.f_season
+
+			.filter__mobile-box.f_range
+				.fm-title
+					.fm-close
+					span Размерный ряд
+				ul.fm-list
+					li
+						input(type="checkbox", name="filterMobRang[]").check-input#checkMobRang1
+						label(for='checkMobRang1').label-btn 40 - 50
+					li
+						input(type="checkbox", name="filterMobRang[]").check-input#checkMobRang2
+						label(for='checkMobRang2').label-btn 44 - 56 
+					li
+						input(type="checkbox", name="filterMobRang[]").check-input#checkMobRang3
+						label(for='checkMobRang3').label-btn 48 - 62 (Size +)
+				ul.fm-action
+					li
+						a(href="#").btn-cancel.btn Отмена
+					li
+						a(href="#").btn-apply.btn.btn-white ОК
+			// /.f_range
+
+			.filter__mobile-box.f_heater
+				.fm-title
+					.fm-close
+					span Утеплитель
+				ul.fm-list
+					li
+						input(type="checkbox", name="filterMobHeater[]").check-input#checkMobHeater1
+						label(for='checkMobHeater1').label-btn Termofinn
+					li
+						input(type="checkbox", name="filterMobHeater[]").check-input#checkMobHeater2
+						label(for='checkMobHeater2').label-btn Watteline
+				ul.fm-action
+					li
+						a(href="#").btn-cancel.btn Отмена
+					li
+						a(href="#").btn-apply.btn.btn-white ОК
+			// /.f_heater
+
+			.filter__mobile-box.f_cloth
+				.fm-title
+					.fm-close
+					span Ткань
+				ul.fm-list
+					li
+						span.check-inputAll Все				
+					li
+						input(type="checkbox", name="filterMobCloth[]").check-input#checkMobCloth1
+						label(for='checkMobCloth1').label-btn Велюр
+					li
+						input(type="checkbox", name="filterMobCloth[]").check-input#checkMobCloth2
+						label(for='checkMobCloth2').label-btn Габардин
+					li
+						input(type="checkbox", name="filterMobCloth[]").check-input#checkMobCloth3
+						label(for='checkMobCloth3').label-btn Кашемир
+					li
+						input(type="checkbox", name="filterMobCloth[]").check-input#checkMobCloth4
+						label(for='checkMobCloth4').label-btn Креп
+					li
+						input(type="checkbox", name="filterMobCloth[]").check-input#checkMobCloth5
+						label(for='checkMobCloth5').label-btn Драп
+				ul.fm-action
+					li
+						a(href="#").btn-cancel.btn Отмена
+					li
+						a(href="#").btn-apply.btn.btn-white ОК
+			// /.f_heater
+
+// /.filter__mobile	

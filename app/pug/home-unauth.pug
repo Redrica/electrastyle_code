@@ -1,0 +1,293 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body.unauth
+		include modules/header
+
+		section.wrapper
+			.main__slider
+				.slider.sliderItem
+					div(data-themes="themeDark").main-slide
+						.slide-container
+							.slide-content
+								img(src="images/slider/slide1.jpg", alt="#", data-img="images/slider/slide1x640.jpg").slideImg
+								.slide-box
+									.slide-txt
+										.h3 Электрастайл - 
+											span производитель верхней одежды
+										.clear
+										a(href="#").btn-slide
+											span Подробнее
+					div(data-themes="themeLight").main-slide
+						.slide-container
+							.slide-content
+								img(src="images/slider/slide2.jpg", alt="#", data-img="images/slider/slide2x640.jpg").slideImg
+								.slide-box
+									.slide-txt
+										.h3 Электрастайл - 
+											span производитель верхней одежды
+										.clear
+										a(href="#").btn-slide
+											span Подробнее
+					div(data-themes="themeDark").main-slide
+						.slide-container
+							.slide-content
+								img(src="images/slider/slide1.jpg", alt="#", data-img="images/slider/slide1x640.jpg").slideImg
+								.slide-box
+									.slide-txt
+										.h3 Электрастайл - 
+											span производитель верхней одежды
+										.clear
+										a(href="#").btn-slide
+											span Подробнее
+					div(data-themes="themeLight").main-slide
+						.slide-container
+							.slide-content
+								img(src="images/slider/slide2.jpg", alt="#", data-img="images/slider/slide2x640.jpg").slideImg
+								.slide-box
+									.slide-txt
+										.h3 Электрастайл - 
+											span производитель верхней одежды
+										.clear
+										a(href="#").btn-slide
+											span Подробнее
+			// /.main__slider
+			.clear
+			include modules/group-home-unauth	
+			// /.group__container
+
+			.lookbook__container
+				.container
+					.lb-title.lb-title-parent
+						.lb-title-box
+							span
+							h3 Lookbook 2017
+							span
+						.clear
+						a(href="#").lb-btn.hidden-xs Весь Lookbook
+					.clear
+					.lookbook-slider
+						.lookbook-slider-box
+							.swiper-container.lb-swiper.swiper1.swiper-left
+								.swiper-wrapper
+									.swiper-slide
+										.swiper__content
+											.lb-content
+												.lb-big
+													a(href="#")
+														+img('img1.jpg', 'images/lookbook/')
+											.lb-content-list.hidden-xs
+												ul.lb-list
+													li
+														.lb-list-img
+															a(href="#")
+																+img('img3.jpg', 'images/lookbook/')
+														.lb-list-title
+															a(href="#") Пальто демисезонное
+														a(href="#").lb-btn Узнать цену
+									.swiper-slide
+										.swiper__content
+											.lb-content
+												.lb-big
+													a(href="#")
+														+img('img2.jpg', 'images/lookbook/')
+											.lb-content-list.hidden-xs
+												ul.lb-list
+													li
+														.lb-list-img
+															a(href="#")
+																+img('img4.jpg', 'images/lookbook/')
+														.lb-list-title
+															a(href="#") Пальто демисезонное
+														a(href="#").lb-btn Узнать цену
+							//-.swiper-container
+
+							.swiper-container.lb-swiper.swiper2.swiper-right.hidden-tablet
+								.swiper-wrapper
+									.swiper-slide
+										.swiper__content
+											.lb-content
+												.lb-big
+													a(href="#")
+														+img('img2.jpg', 'images/lookbook/')
+											.lb-content-list
+												ul.lb-list
+													li
+														.lb-list-img
+															a(href="#")
+																+img('img4.jpg', 'images/lookbook/')
+														.lb-list-title
+															a(href="#") Пальто демисезонное
+														a(href="#").lb-btn Узнать цену
+											.lb-title
+												.lb-title-box
+													h3 #electrastyle
+									.swiper-slide
+										.swiper__content
+											.lb-content
+												.lb-big
+													a(href="#")
+														+img('img1.jpg', 'images/lookbook/')
+											.lb-content-list
+												ul.lb-list
+													li
+														.lb-list-img
+															a(href="#")
+																+img('img3.jpg', 'images/lookbook/')
+														.lb-list-title
+															a(href="#") Пальто демисезонное
+														a(href="#").lb-btn Узнать цену
+											.lb-title
+												.lb-title-box
+													h3 #electrastyle
+						//-.swiper-container
+						ul.lb-navigation.pag-left
+							li.lb-prev.lb-prev1
+							li.lb-next.lb-next1
+						ul.lb-navigation.pag-right.hidden-tablet
+							li.lb-prev.lb-prev2
+							li.lb-next.lb-next2
+					//-.lookbook-slider
+			// /.lookbook__container
+
+			.popular__product
+				.container
+					.title
+						.title-box
+							h3 популярные товары
+					.clear
+					.popular__slider
+						.slider.popularItem.popularSlider
+							div
+								.product__box
+									.pr-img-box
+										a(href="#").pr-favorite
+										ul.pr-img-slider
+											li.slide_0.slide_active
+												a(href="#")
+													+img('img1.jpg', 'images/catalog/')
+										//-.pr-img-slider
+									.pr-bottom
+										.pr-title-box
+											a(href="#")
+												span Пальто
+												span 3-7007-227-3-7007-227
+										a(href="#").pr-btn Узнать цену
+							//-end div
+							div
+								.product__box
+									.pr-img-box
+										a(href="#").pr-favorite
+										ul.pr-img-slider
+											li.slide_0.slide_active
+												a(href="#")
+													+img('img2.jpg', 'images/catalog/')
+										//-.pr-img-slider
+									.pr-bottom
+										.pr-title-box
+											a(href="#")
+												span Пальто
+												span 3-7007-227-3-7007-227
+										a(href="#").pr-btn Узнать цену
+							//-end div
+							div
+								.product__box
+									.pr-img-box
+										a(href="#").pr-favorite
+										ul.pr-img-slider
+											li.slide_0.slide_active
+												a(href="#")
+													+img('img3.jpg', 'images/catalog/')
+										//-.pr-img-slider
+									.pr-bottom
+										.pr-title-box
+											a(href="#")
+												span Пальто
+												span 3-7007-227-3-7007-227
+										a(href="#").pr-btn Узнать цену
+							//-end div
+							div
+								.product__box
+									.pr-img-box
+										a(href="#").pr-favorite
+										ul.pr-img-slider
+											li.slide_0.slide_active
+												a(href="#")
+													+img('img4.jpg', 'images/catalog/')
+										//-.pr-img-slider
+									.pr-bottom
+										.pr-title-box
+											a(href="#")
+												span Пальто
+												span 3-7007-227-3-7007-227
+										.pr-price 25000
+											span В
+							//-end div
+							div
+								.product__box
+									.pr-img-box
+										a(href="#").pr-favorite
+										ul.pr-img-slider
+											li.slide_0.slide_active
+												a(href="#")
+													+img('img2.jpg', 'images/catalog/')
+										//-.pr-img-slider
+									.pr-bottom
+										.pr-title-box
+											a(href="#")
+												span Пальто
+												span 3-7007-227-3-7007-227
+										a(href="#").pr-btn Узнать цену
+							//-end div
+							div
+								.product__box
+									.pr-img-box
+										a(href="#").pr-favorite
+										ul.pr-img-slider
+											li.slide_0.slide_active
+												a(href="#")
+													+img('img3.jpg', 'images/catalog/')
+										//-.pr-img-slider
+									.pr-bottom
+										.pr-title-box
+											a(href="#")
+												span Пальто
+												span 3-7007-227-3-7007-227
+										a(href="#").pr-btn Узнать цену
+							//-end div
+							div
+								.product__box
+									.pr-img-box
+										a(href="#").pr-favorite
+										ul.pr-img-slider
+											li.slide_0.slide_active
+												a(href="#")
+													+img('img4.jpg', 'images/catalog/')
+										//-.pr-img-slider
+									.pr-bottom
+										.pr-title-box
+											a(href="#")
+												span Пальто
+												span 3-7007-227-3-7007-227
+										a(href="#").pr-btn Узнать цену
+							//-end div
+				//-.container		
+			//-.popular__product
+
+			include modules/backstage		
+			include modules/subscribe		
+			include modules/news-home
+			include modules/subscribe-table
+			include modules/inst-home
+			include modules/blog-home
+			include modules/about-home
+
+
+		// /.wrapper
+
+		include modules/footer-child
+		include modules/modal
+		include includes/foot
+

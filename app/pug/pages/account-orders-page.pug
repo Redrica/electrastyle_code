@@ -1,0 +1,444 @@
+include ../mixins/image
+.catalog__content
+	.title.hidden-xs
+		.title-box
+			.h1.account-title История заказов
+	section.account
+		.container
+			.account__wrapper
+				include ../modules/account-menu
+				.orders-list
+					.orders-list__info
+						.orders-list__info-item Номер заказа
+						.orders-list__info-item Дата
+						.orders-list__info-item Сумма
+						.orders-list__info-item Статус
+					ul.orders-list__list
+
+						li.orders-list__item.order
+							.order__summary
+								.order__summary-item
+									.order__summary-name Номер заказа
+									.order__summary-value.order__summary-value--col
+										a(href='#') 1528
+								.order__summary-item
+									.order__summary-name Дата
+									.order__summary-value 26.06.2018 11:30
+								.order__summary-item
+									.order__summary-name Сумма
+									.order__summary-value 9 999 000
+										|
+										i.rub &#8381;
+								.order__summary-item
+									.order__summary-name Статус
+									.order__summary-value Завершен
+							.order__inner
+								.order__content
+									.order__img
+										a(href="#")
+											img(src="images/order_126x188.jpg", alt="#").img-responsive
+									.order__info-container
+										.order__info
+											h1.pr-title
+												a(href="#") Пальто демисезонное
+											.pr-code Артикул:  3-4448/4-223
+											span.show-prop Подробнее
+										.order__accordion
+											ul.pr-properties.properties-list.basket-pr-list
+												li
+													span.pr-item Размерный ряд:
+													| 44–52
+												li
+													span.pr-item Материал:
+													|
+													a(href="#modalColor" class="modal-texture") Велюр 128
+												li
+													span.pr-item Состав:
+													| 100% шерсть
+												li
+													span.pr-item Мех:
+													| Норка
+												li
+													span.pr-item Утеплитель:
+													| Утеплитель
+
+									.order__details-container
+										.order__details.order-details
+											.order-details__color
+												a(href="#") 227 - Темно-сине-белый
+												.order-details__img.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/order_126x188_green.jpg") Показать фото
+											.order-details__quantity.calc-item-box
+												p Количество
+												div
+													span 900
+													span шт.
+													span 999
+													span.i-box
+											.order-details__price.c-item-price.c-basket-item-price
+												span 9 999 000
+												i.rub &#8381;
+											.clear
+								.clear
+
+								.order__content
+									.order__img
+										a(href="#")
+											img(src="images/order_126x188.jpg", alt="#").img-responsive
+									.order__info-container
+										.order__info
+											h1.pr-title
+												a(href="#") Пальто демисезонное
+											.pr-code Артикул:  3-4448/4-223
+											span.show-prop Подробнее
+										.order__accordion
+											ul.pr-properties.properties-list.basket-pr-list
+												li
+													span.pr-item Размерный ряд:
+													| 44–52
+												li
+													span.pr-item Материал:
+													|
+													a(href="#modalColor" class="modal-texture") Велюр 128
+												li
+													span.pr-item Состав:
+													| 100% шерсть
+												li
+													span.pr-item Мех:
+													| Норка
+												li
+													span.pr-item Утеплитель:
+													| Утеплитель
+									.order__details-container
+										.order__details.order-details
+											.order-details__color
+												a(href="#") 227 - Темно-сине-белый
+												.order-details__img.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/order_126x188_red.jpg") Показать фото
+											.order-details__quantity.calc-item-box
+												p Количество
+												div
+													span 10
+													span шт.
+													span 2
+													span.i-box
+											.order-details__price.c-item-price.c-basket-item-price
+												span 45 000
+												i.rub &#8381;
+											.clear
+										.order__details.order-details
+											.order-details__color
+												a(href="#") 227 - Темно-сине-белый
+												.order-details__img.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/order_126x188_green.jpg") Показать фото
+											.order-details__quantity.calc-item-box
+												p Количество
+												div
+													span 10
+													span шт.
+													span 2
+													span.i-box
+											.order-details__price.c-item-price.c-basket-item-price
+												span 45 000
+												i.rub &#8381;
+											.clear
+								.order__final.calc-item-box
+									p Итого:
+									div
+										span 20
+										span шт.
+										span 4
+										span.i-box
+										span 9 900 000
+											i.rub &#8381;
+							span.order__link-more Подробнее
+							span.order__link-more.order__link-more--tab-up.order__link-more--top Подробнее
+							span.order__link-more.order__link-more--tab-up.order__link-more--bottom Свернуть
+
+						li.orders-list__item.order
+							.order__summary
+								.order__summary-item
+									.order__summary-name Номер заказа
+									.order__summary-value.order__summary-value--col
+										a(href='#') 1528
+								.order__summary-item
+									.order__summary-name Дата
+									.order__summary-value 26.06.2018 11:30
+								.order__summary-item
+									.order__summary-name Сумма
+									.order__summary-value 25 000
+										|
+										i.rub &#8381;
+								.order__summary-item
+									.order__summary-name Статус
+									.order__summary-value Принят, ожидается оплата
+							.order__inner
+								.order__content
+									.order__img
+										a(href="#")
+											img(src="images/order_126x188.jpg", alt="#").img-responsive
+									.order__info-container
+										.order__info
+											h1.pr-title
+												a(href="#") Пальто демисезонное
+											.pr-code Артикул:  3-4448/4-223
+											span.show-prop Подробнее
+										.order__accordion
+											ul.pr-properties.properties-list.basket-pr-list
+												li
+													span.pr-item Размерный ряд:
+													| 44–52
+												li
+													span.pr-item Материал:
+													|
+													a(href="#modalColor" class="modal-texture") Велюр 128
+												li
+													span.pr-item Состав:
+													| 100% шерсть
+												li
+													span.pr-item Мех:
+													| Норка
+												li
+													span.pr-item Утеплитель:
+													| Утеплитель
+									.order__details-container
+										.order__details.order-details
+											.order-details__color
+												a(href="#") 227 - Темно-сине-белый
+												.order-details__img.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/order_126x188_green.jpg") Показать фото
+											.order-details__quantity.calc-item-box
+												p Количество
+												div
+													span 10
+													span шт.
+													span 2
+													span.i-box
+											.order-details__price.c-item-price.c-basket-item-price
+												span 45 000
+												i.rub &#8381;
+											.clear
+								.clear
+
+								.order__content
+									.order__img
+										a(href="#")
+											img(src="images/order_126x188.jpg", alt="#").img-responsive
+									.order__info-container
+										.order__info
+											h1.pr-title
+												a(href="#") Пальто демисезонное
+											.pr-code Артикул:  3-4448/4-223
+											span.show-prop Подробнее
+										.order__accordion
+											ul.pr-properties.properties-list.basket-pr-list
+												li
+													span.pr-item Размерный ряд:
+													| 44–52
+												li
+													span.pr-item Материал:
+													|
+													a(href="#modalColor" class="modal-texture") Велюр 128
+												li
+													span.pr-item Состав:
+													| 100% шерсть
+												li
+													span.pr-item Мех:
+													| Норка
+												li
+													span.pr-item Утеплитель:
+													| Утеплитель
+									.order__details-container
+										.order__details.order-details
+											.order-details__color
+												a(href="#") 227 - Темно-сине-белый
+												.order-details__img.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/order_126x188_red.jpg") Показать фото
+											.order-details__quantity.calc-item-box
+												p Количество
+												div
+													span 10
+													span шт.
+													span 2
+													span.i-box
+											.order-details__price.c-item-price.c-basket-item-price
+												span 45 000
+												i.rub &#8381;
+											.clear
+										.order__details-container
+											.order__details.order-details
+												.order-details__color
+													a(href="#") 227 - Темно-сине-белый
+													.order-details__img.c-item-img
+														img(src="images/color/color1.png", alt="#").img-responsive
+														a.photo-change(href="#", data-img="images/order_126x188_green.jpg") Показать фото
+												.order-details__quantity.calc-item-box
+													p Количество
+													div
+														span 10
+														span шт.
+														span 2
+														span.i-box
+												.order-details__price.c-item-price.c-basket-item-price
+													span 45 000
+													i.rub &#8381;
+												.clear
+								.order__final.calc-item-box
+									p Итого:
+									div
+										span 20
+										span шт.
+										span 4
+										span.i-box
+										span 100 000
+											i.rub &#8381;
+							span.order__link-more Подробнее
+							span.order__link-more.order__link-more--tab-up.order__link-more--top Подробнее
+							span.order__link-more.order__link-more--tab-up.order__link-more--bottom Свернуть
+
+						li.orders-list__item.order
+							.order__summary
+								.order__summary-item
+									.order__summary-name Номер заказа
+									.order__summary-value.order__summary-value--col
+										a(href='#') 1528
+								.order__summary-item
+									.order__summary-name Дата
+									.order__summary-value 26.06.2018 11:30
+								.order__summary-item
+									.order__summary-name Сумма
+									.order__summary-value 25 000
+										|
+										i.rub &#8381;
+								.order__summary-item
+									.order__summary-name Статус
+									.order__summary-value Завершен
+							.order__inner
+								.order__content
+									.order__img
+										a(href="#")
+											img(src="images/order_126x188.jpg", alt="#").img-responsive
+									.order__info-container
+										.order__info
+											h1.pr-title
+												a(href="#") Пальто демисезонное
+											.pr-code Артикул:  3-4448/4-223
+											span.show-prop Подробнее
+										.order__accordion
+											ul.pr-properties.properties-list.basket-pr-list
+												li
+													span.pr-item Размерный ряд:
+													| 44–52
+												li
+													span.pr-item Материал:
+													|
+													a(href="#modalColor" class="modal-texture") Велюр 128
+												li
+													span.pr-item Состав:
+													| 100% шерсть
+												li
+													span.pr-item Мех:
+													| Норка
+												li
+													span.pr-item Утеплитель:
+													| Утеплитель
+									.order__details-container
+										.order__details.order-details
+											.order-details__color
+												a(href="#") 227 - Темно-сине-белый
+												.order-details__img.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/order_126x188_green.jpg") Показать фото
+											.order-details__quantity.calc-item-box
+												p Количество
+												div
+													span 10
+													span шт.
+													span 2
+													span.i-box
+											.order-details__price.c-item-price.c-basket-item-price
+												span 45 000
+												i.rub &#8381;
+											.clear
+								.clear
+
+								.order__content
+									.order__img
+										a(href="#")
+											img(src="images/order_126x188.jpg", alt="#").img-responsive
+									.order__info-container
+										.order__info
+											h1.pr-title
+												a(href="#") Пальто демисезонное
+											.pr-code Артикул:  3-4448/4-223
+											span.show-prop Подробнее
+										.order__accordion
+											ul.pr-properties.properties-list.basket-pr-list
+												li
+													span.pr-item Размерный ряд:
+													| 44–52
+												li
+													span.pr-item Материал:
+													|
+													a(href="#modalColor" class="modal-texture") Велюр 128
+												li
+													span.pr-item Состав:
+													| 100% шерсть
+												li
+													span.pr-item Мех:
+													| Норка
+												li
+													span.pr-item Утеплитель:
+													| Утеплитель
+									.order__details-container
+										.order__details.order-details
+											.order-details__color
+												a(href="#") 227 - Темно-сине-белый
+												.order-details__img.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/order_126x188_red.jpg") Показать фото
+											.order-details__quantity.calc-item-box
+												p Количество
+												div
+													span 10
+													span шт.
+													span 2
+													span.i-box
+											.order-details__price.c-item-price.c-basket-item-price
+												span 45 000
+												i.rub &#8381;
+											.clear
+										.order__details.order-details
+											.order-details__color
+												a(href="#") 227 - Темно-сине-белый
+												.order-details__img.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/order_126x188_green.jpg") Показать фото
+											.order-details__quantity.calc-item-box
+												p Количество
+												div
+													span 10
+													span шт.
+													span 2
+													span.i-box
+											.order-details__price.c-item-price.c-basket-item-price
+												span 45 000
+												i.rub &#8381;
+											.clear
+								.order__final.calc-item-box
+									p Итого:
+									div
+										span 20
+										span шт.
+										span 4
+										span.i-box
+										span 100 000
+											i.rub &#8381;
+							span.order__link-more Подробнее
+							span.order__link-more.order__link-more--tab-up.order__link-more--top Подробнее
+							span.order__link-more.order__link-more--tab-up.order__link-more--bottom Свернуть

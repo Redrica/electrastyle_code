@@ -1,0 +1,165 @@
+/* Блок магазина на странице МОИ МАГАЗИНЫ */
+
+.shop {
+  position: relative;
+  padding: 22px 50px 51px 33px;
+  border: 1px solid $gray-light;
+
+  @include tablet {
+    display: flex;
+    align-items: flex-start;
+    padding: 25px 50px 25px 23px;
+  }
+
+  @include laptop {
+    padding-left: 33px;
+  }
+
+  @include desktop-wide {
+    padding-left: 89px;
+  }
+
+  &--opened {
+
+    & .shop__edit {
+      display: block;
+    }
+  }
+
+  & a {
+    transition: 0.3s;
+  }
+
+  &__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    @include desktop-wide {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__text {
+    @include text(14px, 22px, 400);
+    margin-bottom: 0;
+  }
+
+  &__logo {
+    display: none;
+    width: 200px;
+    height: 157px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include tablet {
+      margin: 25px 0 0 auto;
+    }
+
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__additional {
+    display: none;
+  }
+
+  &__a-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    @include desktop-wide {
+      margin: 24px 0;
+    }
+  }
+
+  &__social-item {
+    display: block;
+    margin-right: 32px;
+
+    & path {
+      fill: $gray-main;
+      transition: 0.3s;
+    }
+
+    &:hover path {
+      fill: $beige;
+    }
+  }
+
+  &__link {
+    margin-bottom: 15px;
+
+    @include desktop-wide {
+      margin-bottom: 19px;
+    }
+
+    &--beige {
+      color: $beige;
+
+      &:hover {
+        color: $gray-main;
+      }
+    }
+
+    &--phone {
+      margin-bottom: 0;
+      font-size: 18px;
+
+      &:hover {
+        color: $beige;
+      }
+    }
+  }
+
+  &__link-more {
+    position: absolute;
+    right: 20px;
+    bottom: 21px;
+    opacity: 0.4;
+
+    @include tablet {
+      bottom: initial;
+      top: 11px;
+      right: 50px;
+    }
+  }
+
+  &__edit {
+    position: absolute;
+    bottom: 21px;
+    left: 33px;
+    display: none;
+    opacity: 0.4;
+
+    @include tablet {
+      bottom: initial;
+      top: 11px;
+      left: initial;
+      right: 170px;
+    }
+  }
+
+  &__link-more:hover,
+  &__link-more:focus,
+  &__edit:hover,
+  &__edit:focus {
+    color: $beige;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  &__del {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

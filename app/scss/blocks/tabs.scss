@@ -1,0 +1,79 @@
+/* блок с кнопками-табами */
+
+.tabs {
+  display: flex;
+
+  &__tab {
+    @include text(14px, 16px, 400);
+    width: 50%;
+    padding: 8px 20px 10px;
+
+    @include tablet {
+      padding: 2px 20px 2px;
+      line-height: 30px;
+    }
+
+    @include laptop {
+      font-size: 16px;
+      padding: 3px 20px 5px;
+    }
+
+    &.btn:hover {
+      background-color: #DDAB9E;
+      color: $white;
+    }
+
+    &.btn-white:hover {
+      background-color: $white;
+      color: $beige;
+    }
+
+    &--active {
+      cursor: default;
+    }
+
+    &--left-align {
+      align-items: flex-end;
+      justify-content: flex-start;
+      text-align: left;
+
+      @include mobile-wide {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    &--low {
+      padding: 4px 26px 6px;
+
+      @media (min-width: 460px) {
+        padding: 8px 20px 10px;
+      }
+
+      @include tablet {
+        padding: 3px 20px 5px;
+      }
+    }
+
+    &--q-narrow {
+      width: 47%;
+
+      @include tablet {
+        width: 50%;
+      }
+    }
+
+    &--q-wide {
+      width: 53%;
+
+      @include tablet {
+        width: 50%;
+      }
+    }
+
+    & span {
+      margin-left: 4px;
+    }
+  }
+}

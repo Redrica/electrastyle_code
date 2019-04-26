@@ -1,0 +1,145 @@
+include ../mixins/image
+.cooperation__terms
+	.coop-terms-tab
+		.container
+			.coop-terms-title Условия сотрудничества
+			ul.terms-tabs.hidden-xs
+				li.active(data-tab="tab1").tab1
+					span Объем заказа
+				li(data-tab="tab2").tab2
+					span Лояльность
+				li(data-tab="tab3").tab3
+					span Гарантии
+				li(data-tab="tab4").tab4
+					span Рекламная поддержка
+				li(data-tab="tab5").tab5
+					span Оплата
+				li(data-tab="tab6").tab6
+					span Доставка
+	.terms__container
+		.terms__box.tab1
+			.terms__mob.visible-xs
+				.terms-btn(data-tab="tab1").tab1
+					span Объем заказа
+			.clear
+			.terms-box-content
+				.terms-box-text
+					.terms-box-title Объем заказа
+					p Минимальный заказ – один размерный ряд в одном цвете  в количестве от 4-х до 7-ти единиц (в зависимости от размерного ряда).  
+					p Удовлетворим самые крупные пожелания по объему и предложим специальные условия.
+					p Если Вам необходима выборка товара по размерам, просим Вас сказать об этом Менеджеру и он предоставит координаты наших региональных дилеров.
+				.terms-box-img
+					picture
+						source(media="(max-width: 639px)", type="image/jpg", srcset="images/terms/bg1x360.jpg")
+						source(media="(max-width: 919px)", type="image/jpg", srcset="images/terms/bg1x768.jpg")
+						source(media="(max-width: 1365px)", type="image/jpg", srcset="images/terms/bg1x920.jpg")
+						source(media="(max-width: 1799px)", type="image/jpg", srcset="images/terms/bg1x1366.jpg")
+						img(src="images/terms/bg1.jpg", alt="#").img-responsive
+		.terms__box.tab2(style="display: none;")
+			.terms__mob.visible-xs
+				.terms-btn(data-tab="tab2").tab2
+					span Лояльность
+			.clear
+			.terms-box-content
+				.terms-box-text
+					.terms-box-title Лояльность
+					p Бонусная система при осуществлении предзаказа.
+					p Дополнительная скидка от объемов закупок.
+					p Кредитные линии | отсрочка платежа.
+					p Специальные условия партнерам при сотрудничестве от 1 года.
+				.terms-box-img
+					picture
+						source(media="(max-width: 639px)", type="image/jpg", srcset="images/terms/bg2x360.jpg")
+						source(media="(max-width: 919px)", type="image/jpg", srcset="images/terms/bg2x768.jpg")
+						source(media="(max-width: 1365px)", type="image/jpg", srcset="images/terms/bg2x920.jpg")
+						source(media="(max-width: 1799px)", type="image/jpg", srcset="images/terms/bg2x1366.jpg")
+						img(src="images/terms/bg2.jpg", alt="#").img-responsive
+		.terms__box.tab3(style="display: none;")
+			.terms__mob.visible-xs
+				.terms-btn(data-tab="tab3").tab3
+					span Гарантии
+			.clear
+			.terms-box-content
+				.terms-box-text
+					.terms-box-title Гарантии
+					p Собственный отдел контроля качества: 
+						|
+						br 
+						| более 115 примерок перед запуском в производство.
+					p Вся продукция Сертифицирована. Соблюдены все стандарты ЕАС. Предоставляем полный пакет документов. 
+					p Гарантия на продукцию - 
+						| 
+						b 180 дней
+						|.
+				.terms-box-img
+					picture
+						source(media="(max-width: 639px)", type="image/jpg", srcset="images/terms/bg3x360.jpg")
+						source(media="(max-width: 919px)", type="image/jpg", srcset="images/terms/bg3x768.jpg")
+						source(media="(max-width: 1365px)", type="image/jpg", srcset="images/terms/bg3x920.jpg")
+						source(media="(max-width: 1799px)", type="image/jpg", srcset="images/terms/bg3x1366.jpg")
+						img(src="images/terms/bg3.jpg", alt="#").img-responsive
+		.terms__box.tab4.terms-adv(style="display: none;")
+			.terms__mob.visible-xs
+				.terms-btn(data-tab="tab4").tab4
+					span Рекламная поддержка
+			.clear
+			.terms-box-content
+				.terms-box-text
+					.terms-box-title Рекламная поддержка
+					.terms-box-sub-title Мы поддерживаем наших партнеров и предоставляем абсолютно бесплатно:
+					ul.terms-box-list
+						li Имиджевые изображения.
+						li Фотографии для Ваших рекламных целей (социальные сети; интернет-магазины).
+						li Рекламные изображения для оформления Ваших магазинов.
+						li Печатные каталоги и буклеты.
+						li Фирменные пакеты.
+						li Видеоклипы о Electrastyle (Backstage, производство, продукт и др...).
+						li Размещение адреса Вашего магазина на нашем сайте. Мы  перенаправляем заинтересованных Розничных окупателей в Ваш магазин (Более 3000 розничных клинетов на нашем сайте ежедневно).
+				.terms-box-img
+					picture
+						source(media="(max-width: 639px)", type="image/jpg", srcset="images/terms/bg4x360.jpg")
+						source(media="(max-width: 919px)", type="image/jpg", srcset="images/terms/bg4x768.jpg")
+						source(media="(max-width: 1365px)", type="image/jpg", srcset="images/terms/bg4x920.jpg")
+						source(media="(max-width: 1799px)", type="image/jpg", srcset="images/terms/bg4x1366.jpg")
+						img(src="images/terms/bg4.jpg", alt="#").img-responsive
+		.terms__box.tab5(style="display: none;")
+			.terms__mob.visible-xs
+				.terms-btn(data-tab="tab5").tab5
+					span Оплата
+			.clear
+			.terms-box-content
+				.terms-box-text
+					.terms-box-title Оплата
+					p Мы принимаем платежи в удобной для Вас форме. 
+					p Оплата за товар может быть произведена за наличный и безналичный расчет.    
+					p Товар считается оплаченным после поступления денежных средств на расчетный счет компании.
+				.terms-box-img
+					picture
+						source(media="(max-width: 639px)", type="image/jpg", srcset="images/terms/bg5x360.jpg")
+						source(media="(max-width: 919px)", type="image/jpg", srcset="images/terms/bg5x768.jpg")
+						source(media="(max-width: 1365px)", type="image/jpg", srcset="images/terms/bg5x920.jpg")
+						source(media="(max-width: 1799px)", type="image/jpg", srcset="images/terms/bg5x1366.jpg")
+						img(src="images/terms/bg5.jpg", alt="#").img-responsive
+		.terms__box.tab6(style="display: none;")
+			.terms__mob.visible-xs
+				.terms-btn(data-tab="tab6").tab6
+					span Доставка
+			.clear
+			.terms-box-content
+				.terms-box-text
+					.terms-box-title Доставка
+					p Мы отправляем товар в любую точку Мира.
+					p Отгрузка товара со склада осуществляется в течение 3-х дней с момента оплаты при наличии товара на складе. 
+					p Доставку товара до конечного места назначения оплачивает заказчик. 
+					p Мы осуществяем бесплатную доставку до
+						| 
+						a(href="#modalTransport").modal-open транспортных компаний
+						|.
+				.terms-box-img
+					picture
+						source(media="(max-width: 639px)", type="image/jpg", srcset="images/terms/bg6x360.jpg")
+						source(media="(max-width: 919px)", type="image/jpg", srcset="images/terms/bg6x768.jpg")
+						source(media="(max-width: 1365px)", type="image/jpg", srcset="images/terms/bg6x920.jpg")
+						source(media="(max-width: 1799px)", type="image/jpg", srcset="images/terms/bg6x1366.jpg")
+						img(src="images/terms/bg6.jpg", alt="#").img-responsive
+// .cooperation__terms

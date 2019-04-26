@@ -1,0 +1,79 @@
+include ../mixins/image
+.blog__container
+	.container
+		.title
+			.title-box
+				h3 Блог
+			a(href="#").view-all-news.hidden-tablet Смотреть весь блог
+		.blog__content
+			.blog__row.blogItems
+				.blog__col.bg-1
+					.blog__box
+						a(href="#").blog-item
+							span.blog-item-img
+								picture
+									source(media="(max-width: 767px)", srcset="images/blog/img1.jpg")
+									img(src="images/blog/img1.jpg", alt="#").img-responsive
+							span.blog-item-text
+								span.b-item-date 10.10.17
+								span.b-item-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+				.blog__col.bg-2
+					.blog__box
+						a(href="#").blog-item
+							span.blog-item-img
+								picture
+									source(media="(max-width: 767px)", srcset="images/blog/img2.jpg")
+									img(src="images/blog/img2.jpg", alt="#").img-responsive
+							span.blog-item-text
+								span.b-item-date 10.10.17
+								span.b-item-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+				.blog__col.bg-2
+					.blog__box
+						a(href="#").blog-item
+							span.blog-item-img
+								picture
+									source(media="(max-width: 767px)", srcset="images/blog/img3x1023.jpg")
+									img(src="images/blog/img3.jpg", alt="#").img-responsive
+							span.blog-item-text
+								span.b-item-date 10.10.17
+								span.b-item-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+				.blog__col.bg-2
+					.blog__box
+						a(href="#").blog-item
+							span.blog-item-img
+								picture
+									source(media="(max-width: 767px)", srcset="images/blog/img4.jpg")
+									img(src="images/blog/img4.jpg", alt="#").img-responsive
+							span.blog-item-text
+								span.b-item-date 10.10.17
+								span.b-item-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+				.blog__col.bg-1
+					.blog__box
+						a(href="#").blog-item
+							span.blog-item-img
+								picture
+									source(media="(max-width: 767px)", srcset="images/blog/img5.jpg")
+									img(src="images/blog/img5.jpg", alt="#").img-responsive
+							span.blog-item-text
+								span.b-item-date 10.10.17
+								span.b-item-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+				.blog__col.bg-1
+					.blog__box
+						a(href="#").blog-item
+							span.blog-item-img
+								picture
+									source(media="(max-width: 767px)", srcset="images/blog/img6x1023.jpg")
+									img(src="images/blog/img6.jpg", alt="#").img-responsive
+							span.blog-item-text
+								span.b-item-date 10.10.17
+								span.b-item-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+		//-blog__content
+		.clear
+		.visible-xs
+			.clear
+			.blog-action
+				span.prev-btn-blog.btn-blog
+				a(href="#").btn.btn-white Весь блог
+				span.next-btn-blog.btn-blog
+// /.blog__container
+			

@@ -1,0 +1,69 @@
+.filter__container.filter__materials
+	.container
+		.filter__top
+			.filter__top-left
+				.filter__mob
+					span.btn-show-filter Ткани
+				.filter__list-box
+					ul.filter__list
+						li(data-filter="f_outerwear").btn-filter
+							span Ткани верхней одежды
+						li(data-filter="f_summer").btn-filter
+							span Ткани летней одежды
+							i
+					.filter__clear
+						span.btn-clear Очистить фильтр
+			//-.filter__top-left
+
+			.filter__top-right
+				.filter__search
+					span.f-btn-search(data-filter="f_search")
+						span Поиск
+					form(action="#", method="post").f-form-search#f_search
+						input(type="text", placeholder="Что вы ищите?")
+		// /.filter__top
+		
+		.filter__bottom
+			.container
+				form(action="#", method="post")#filterForm
+					.filter__box#f_outerwear
+						ul.f-cat-list
+							li
+								input(type="radio", name="filterOuterwear").filter-check#outerwear1
+								label(for='outerwear1').filter-label.click-radio Пальтовые ткани 
+							li
+								input(type="radio", name="filterOuterwear").filter-check#outerwear2
+								label(for='outerwear2').filter-label.click-radio Плащевые ткани
+							li
+								input(type="radio", name="filterOuterwear").filter-check#outerwear3
+								label(for='outerwear3').filter-label.click-radio Экомех
+							li
+								input(type="radio", name="filterOuterwear").filter-check#outerwear4
+								label(for='outerwear4').filter-label.click-radio Дубленки
+					// /.f_outerwear
+
+					.filter__box#f_summer
+						ul.f-cat-list.f-season-list
+							li
+								span.cheked-all Все
+							li
+								input(type="checkbox", name="filterSummerClothes[]").filter-check.f-int#checkSummer1
+								label(for='checkSummer1').filter-label.f-click Лен
+							li
+								input(type="checkbox", name="filterSummerClothes[]").filter-check.f-int#checkSummer2
+								label(for='checkSummer2').filter-label.f-click Вискоза 
+							li
+								input(type="checkbox", name="filterSummerClothes[]").filter-check.f-int#checkSummer3
+								label(for='checkSummer3').filter-label.f-click Хлопок
+					// /.f_summer
+		.sort-overflow
+
+		// /.filter__bottom
+		.filter__value
+			form(action="#", method="post")#filterFormMobile
+				.filter-content
+				.filter-action
+					a(href="#").reset-filter.btn.btn-white Сбросить фильтр
+					button(type="submit").btn.btn-ok Применить					
+
+// /.filter__container

@@ -1,0 +1,34 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body
+		include modules/header-auth
+
+		section.wrapper
+			.breadcrumb__container.hidden-xs
+				.container
+					ul.breadcrumb
+						li
+							a(href="#") Главная
+						li
+							a(href="#") Личный кабинет
+						li Корзина товаров
+			//-.breadcrumb__container
+						
+			.catalog__container.basket__main
+				.visible-xs.mob-title
+					a(href="#").back-modal
+					span Корзина товаров
+				include pages/basket-page
+			include modules/sliders-basket
+		// /.wrapper
+
+		include modules/footer-child
+		include modules/modal
+		include modules/modal-basket
+		include includes/foot
+
+
+

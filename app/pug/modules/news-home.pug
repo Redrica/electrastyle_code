@@ -1,0 +1,70 @@
+include ../mixins/image
+.news__container
+	.container
+		.title
+			.title-box
+				h3 Новости
+			a(href="#").view-all-news.hidden-tablet Смотреть все новости
+		.news__content
+			.row-news.itemNews
+				.col-news-4
+					.news__box
+						a(href="#")
+							span.news__img
+								+img('img1.jpg', 'images/news/')
+							span.news-block
+								span.news-date 10.10.17
+								span.news-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+								span.news-txt.hidden-tablet И компПочти 500 кг верхней одежды бренда ElectraStyle на днях было доставлено в Ростов-на-Дону, где в результате масштабного пожара 21 августа сгорело более сотни жилых домов.
+				.col-news-4
+					.news__box
+						a(href="#")
+							span.news__img
+								+img('img2.jpg', 'images/news/')
+							span.news-block
+								span.news-date 10.10.17
+								span.news-title 5 причин ждать презентацию наших весенних моделей!
+								span.news-txt.hidden-tablet Вы уже задумывались о весеннем ассортименте Вашего магазина? Мы готовим масштабную презентацию самых востребованных моделей ВЕСНЫ-2018!
+				.col-news-4
+					.news__box
+						a(href="#")
+							span.news__img
+								+img('img3.jpg', 'images/news/')
+							span.news-block
+								span.news-date 10.10.17
+								span.news-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+								span.news-txt.hidden-tablet И композиции читаемый Текст мешает СосредоточитьсяLorem Ipsum используют Потому, что тот обеспечивает более  
+				.col-news-4
+					.news__box
+						a(href="#")
+							span.news__img
+								+img('img4.jpg', 'images/news/')
+							span.news-block
+								span.news-date 10.10.17
+								span.news-title Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+								span.news-txt.hidden-tablet И компПочти 500 кг верхней одежды бренда ElectraStyle на днях было доставлено в Ростов-на-Дону, где в результате масштабного пожара 21 августа сгорело более сотни жилых домов.
+				.col-news-6
+					.news__box
+						a(href="#")
+							span.news__img
+								+img('img5.jpg', 'images/news/')
+							span.news-block
+								span.news-date 10.10.17
+								span.news-title Снова лето!
+								span.news-txt.hidden-tablet Мы, не волшебники, мы только учимся! Увы, продлить летние месяцы мы не в силах. Но, мы снова готовимся к запуску нашей новой летней коллекции!
+				.col-news-6
+					.news__box
+						a(href="#")
+							span.news__img
+								+img('img6.jpg', 'images/news/')
+							span.news-block
+								span.news-date 10.10.17
+								span.news-title Снова лето!
+								span.news-txt.hidden-tablet Мы, не волшебники, мы только учимся! Увы, продлить летние месяцы мы не в силах. Но, мы снова готовимся к запуску нашей новой летней коллекции!
+		//-.news__content
+		.visible-tablet
+			.news-mobile-action
+				span.prev-btn-news.btn-news
+				a.btn.btn-white(href="#") Все новости
+				span.next-btn-news.btn-news
+// /.news__container

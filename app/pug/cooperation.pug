@@ -1,0 +1,33 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body
+		include modules/header
+
+		section.wrapper.cooperation-page
+			.breadcrumb__container.hidden-xs
+				.container
+					ul.breadcrumb
+						li
+							a(href="#") Главная
+						li Сотрудничество
+			//-.breadcrumb__container
+			.catalog__container
+				.visible-xs.mob-title
+					a(href="#").back-modal
+					span Сотрудничество
+				.catalog__content
+					include modules/cooperation-main
+					include modules/cooperation-trigger
+					include modules/cooperation-terms
+					include pages/cooperation-catalog
+			// .innter__container
+		// /.wrapper
+
+		include modules/footer-child
+		include modules/modal
+		include includes/foot
+
+

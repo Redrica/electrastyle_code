@@ -1,0 +1,15 @@
+ul.account__list
+	li.account__list-item
+		a.account__list-link(href="#") Мой личный менеджер
+	li.account__list-item(class = (page === "orders" ? "account__list-item--active" : ""))
+		a(href="#") История заказов
+	li.account__list-item(class = (page === "myData" ? "account__list-item--active" : ""))
+		a(href="#") Мои данные
+	li.account__list-item(class = (page === "shops" ? "account__list-item--active" : ""))
+		a(href="#") Мои магазины
+	li.account__list-item(class = (page === "password" ? "account__list-item--active" : ""))
+		a(href="#") Сменить пароль
+	li.account__list-item
+		a(href="#") Избранное
+	li.account__list-item(class = (page === "questions" ? "account__list-item--active" : ""))
+		a(href="#") Отзывы и вопросы

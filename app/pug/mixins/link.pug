@@ -1,0 +1,14 @@
+mixin link(href, name)
+	a(href=href)= name
+	//- +link('/','ссылка')
+mixin productBox(prTitle, text, btnTxt)
+	div.catalog__block
+		div.catalog__box-title
+			a(href="#")= prTitle
+		div.catalog__box-text
+			span= text
+		a(href="#").catalog-btn
+			span.btn-txt= btnTxt
+			span.cat-icon
+// - +productBox('1','2','3')
+

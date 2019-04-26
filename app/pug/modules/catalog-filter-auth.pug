@@ -1,0 +1,171 @@
+.filter__container.filter__container-auth
+	.container
+		.filter__top
+			.filter__top-left
+				.filter__mob
+					span.btn-show-filter Фильтры
+				.filter__list-box
+					ul.filter__list
+						li(data-filter="f_cat").btn-filter
+							span Категории
+						li(data-filter="f_season").btn-filter
+							span Сезон
+							i
+						li(data-filter="f_range").btn-filter
+							span Размерный ряд
+							i
+						li(data-filter="f_heater").btn-filter
+							span Утеплитель
+							i
+						li(data-filter="f_cloth").btn-filter
+							span Ткань
+							i
+					.filter__clear
+						span.btn-clear Очистить фильтр
+			//-.filter__top-left
+
+			.filter__top-right
+				.filter__search
+					span.f-btn-search(data-filter="f_search")
+						span Поиск
+					form(action="#", method="post").f-form-search#f_search
+						input(type="text", placeholder="Что вы ищите?")
+				.filter__sort
+					span.f-btn-sort(data-filter="f_sort") Сортировка
+					#f_sort
+						ul.sort__list
+							li
+								input(type="radio", name="filterSort").filter-check#checkSort1
+								label(for='checkSort1').filter-label Цена по возрастанию								 
+							li
+								input(type="radio", name="filterSort").filter-check#checkSort2
+								label(for='checkSort2').filter-label Цена по убыванию								
+							li
+								input(type="radio", name="filterSort").filter-check#checkSort3
+								label(for='checkSort3').filter-label Популярность												
+				.filter__views
+					.filter__mob.visible-xs
+						span.btn-filter-view Выдача
+
+					ul.filter__card-views
+						li
+							a(href="#", title="Плитка").active.v-1
+						li
+							a(href="#", title="Крупная плитка").v-2
+						li
+							a(href="#", title="Список").v-3
+				.filter__switcher
+					.sw-title-box
+						.sw-title-q ?
+						span.sw-title Добавлено за неделю
+					a(href="#").switcher-link
+						span.sw-title Добавлено за неделю
+		// /.filter__top
+		
+		.filter__bottom
+			.container
+				#f_sort
+					ul.sort__list
+						li
+							input(type="radio", name="filterSort").filter-check#checkSort1
+							label(for='checkSort1').filter-label Цена по возрастанию								 
+						li
+							input(type="radio", name="filterSort").filter-check#checkSort2
+							label(for='checkSort2').filter-label Цена по убыванию								
+						li
+							input(type="radio", name="filterSort").filter-check#checkSort3
+							label(for='checkSort3').filter-label Популярность	
+												
+				form(action="#", method="post")#filterForm
+					.filter__box#f_cat
+						ul.f-cat-list
+							li
+								input(type="radio", name="filterCat").filter-check#allCat
+								label(for='allCat').filter-label.click-radio Все
+							li
+								input(type="radio", name="filterCat").filter-check#cat1
+								label(for='cat1').filter-label.click-radio Пальто 
+							li
+								input(type="radio", name="filterCat").filter-check#cat2
+								label(for='cat2').filter-label.click-radio Каракуль
+							li
+								input(type="radio", name="filterCat").filter-check#cat3
+								label(for='cat3').filter-label.click-radio Дубленки
+							li
+								input(type="radio", name="filterCat").filter-check#cat4
+								label(for='cat4').filter-label.click-radio Куртки
+							li
+								input(type="radio", name="filterCat").filter-check#cat5
+								label(for='cat5').filter-label.click-radio Пуховик
+					// /.f_cat
+
+					.filter__box#f_season
+						ul.f-cat-list.f-season-list
+							li
+								span.cheked-all Все
+							li
+								input(type="checkbox", name="filterSeason[]").filter-check.f-int#checkSeason1
+								label(for='checkSeason1').filter-label.f-click Зима
+							li
+								input(type="checkbox", name="filterSeason[]").filter-check.f-int#checkSeason2
+								label(for='checkSeason2').filter-label.f-click Весна 
+							li
+								input(type="checkbox", name="filterSeason[]").filter-check.f-int#checkSeason3
+								label(for='checkSeason3').filter-label.f-click Лето
+							li
+								input(type="checkbox", name="filterSeason[]").filter-check.f-int#checkSeason4
+								label(for='checkSeason4').filter-label.f-click Осень
+					// /.f_season
+
+					.filter__box#f_range
+						ul.f-range-list
+							li
+								input(type="checkbox", name="filterRang[]").filter-check.f-int#checkRang1
+								label(for='checkRang1').filter-label.label-check 40 - 50
+							li
+								input(type="checkbox", name="filterRang[]").filter-check.f-int#checkRang2
+								label(for='checkRang2').filter-label.label-check 44 - 56
+							li
+								input(type="checkbox", name="filterRang[]").filter-check.f-int#checkRang3
+								label(for='checkRang3').filter-label.label-check 48 - 62 (Size +)
+					// /.f_range
+
+					.filter__box#f_heater
+						ul.f-range-list
+							li
+								input(type="checkbox", name="filterHeater[]").filter-check.f-int#checkHeater1
+								label(for='checkHeater1').filter-label.label-check Termofinn
+							li
+								input(type="checkbox", name="filterHeater[]").filter-check.f-int#checkHeater2
+								label(for='checkHeater2').filter-label.label-check Watteline
+					// /.f_heater
+
+					.filter__box#f_cloth
+						ul.f-cat-list.f-season-list
+							li
+								span.cheked-all Все
+							li
+								input(type="checkbox", name="filterCloth[]").filter-check.f-int#checkClothAll
+								label(for='checkClothAll').filter-label.f-click Велюр
+							li
+								input(type="checkbox", name="filterCloth[]").filter-check.f-int#checkCloth1
+								label(for='checkCloth1').filter-label.f-click Габардин
+							li
+								input(type="checkbox", name="filterCloth[]").filter-check.f-int#checkCloth2
+								label(for='checkCloth2').filter-label.f-click Кашемир 
+							li
+								input(type="checkbox", name="filterCloth[]").filter-check.f-int#checkCloth3
+								label(for='checkCloth3').filter-label.f-click Креп
+							li
+								input(type="checkbox", name="filterCloth[]").filter-check.f-int#checkCloth4
+								label(for='checkCloth4').filter-label.f-click Драп
+					// /.f_cloth
+		.sort-overflow
+		// /.filter__bottom
+		.filter__value
+			form(action="#", method="post")#filterFormMobile
+				.filter-content
+				.filter-action
+					a(href="#").reset-filter.btn.btn-white Сбросить фильтр
+					button(type="submit").btn.btn-ok Применить
+// /.filter__container

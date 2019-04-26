@@ -1,0 +1,44 @@
+.subscribe__container
+	.container
+		.subscribe__content
+			.subscribe__title.col-md-8.col-sm-9.col-xs-18
+				.sb-title-main
+					span Будьте в курсе!
+				.sb-title-sub Подпиштесь на рассылку!
+			//-.subscribe__title
+			.subscribe__box.col-md-9.col-xs-18
+				.subscribe__form
+					form(data-toggle="validator", role="form", action="#", method="post")
+						.control-box.hidden-tablet
+							ul.control-list
+								li
+									input(type="radio", name="subRadio")#radio1.contol-radio
+									label(for="radio1").control-label Новости
+								li
+									input(type="radio", name="subRadio")#radio2.contol-radio
+									label(for="radio2").control-label Блог
+								li
+									input(type="radio", name="subRadio", checked)#radio3.contol-radio
+									label(for="radio3").control-label Акции
+						// /.control-box
+						.control-box.control-group-btn.control__box
+							input(type="text", placeholder="Ваш E-mail", data-error="Укажите ваш e-mail", required).control-input
+							button(type="submit").control-btn
+								span Подписаться
+							.help-block.with-errors
+						.control-box.control__box
+							input(type="checkbox", required)#check1.contol-checkbox
+							label(for="check1").contol-label-check Я соглашаюсь с политикой обработки персональных данных
+					.hidden-tablet.hidden-xs
+						ul.share-list
+							li
+								a(href="#").soc-inst
+							li
+								a(href="#").soc-vk
+							li
+								a(href="#").soc-fb
+							li
+								a(href="#").soc-yt
+			// /.subscribe__box
+		//-.subscribe__content
+//-.subscribe__container

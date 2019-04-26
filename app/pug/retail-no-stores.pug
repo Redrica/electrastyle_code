@@ -1,0 +1,35 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body.retail-no-stores
+		include modules/header
+
+		section.wrapper
+			.breadcrumb__container.hidden-xs
+				.container
+					ul.breadcrumb
+						li
+							a(href="#") Женская
+						li
+							a(href="#") Верхняя одежда
+						li
+							a(href="#") Пальто
+						li Пальто демисезонное
+			//-.breadcrumb__container
+						
+			include modules/retail-stores-page
+			include modules/sliders
+			include modules/retail-page-stories-v2
+		// /.wrapper
+
+		include modules/footer-child
+		include modules/modal
+		include includes/foot
+		include includes/js-map
+		script(src="js/hammer.min.js")
+		script(src="js/TweenMax.min.js")
+		script(src="js/jquery.pinchzoomer.js")
+
+

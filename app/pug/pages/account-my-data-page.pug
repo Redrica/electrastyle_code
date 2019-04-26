@@ -1,0 +1,42 @@
+include ../mixins/input-field
+include ../mixins/select
+
+.catalog__content
+	.title.hidden-xs
+		.title-box
+			.h1.account-title Мои данные
+	section.account
+		.container
+			.account__wrapper
+				include ../modules/account-menu
+				.my-data.account__my-data
+					form.my-data__form(action='#' method='#')
+						+input-field('my-data__input', '', 'first-name', 'text', 'first-name', '', '', '', 'Имя')
+						+input-field('my-data__input', '', 'last-name', 'text', 'last-name', '', '', '', 'Фамилия')
+						+input-field('my-data__input', '', 'patronymic', 'text', 'patronymic', '', '', '', 'Отчество')
+						+input-field('my-data__input', '', 'tel', 'tel', 'tel', '+7 (___) ___ - __ - __', '', '', 'Телефон')
+						+input-field('my-data__input', '', 'mail', 'email', 'mail', '', '', '', 'E-mail')
+						.my-data__fields-group.form-multi-inputs
+							p.form-multi-inputs__title Дата рождения
+							.form-multi-inputs__wrapper
+								+input-field('form-multi-inputs__input', '', 'bd', 'text', 'bd', 'День', 'visually-hidden', 'день', '')
+								+input-field('form-multi-inputs__input', '', 'bm', 'text', 'bm', 'Месяц', 'visually-hidden', 'месяц', '')
+								+input-field('form-multi-inputs__input', '', 'by', 'text', 'by', 'Год', 'visually-hidden', 'год', '')
+						.my-data__radio-group.form-multi-inputs
+							p.form-multi-inputs__title Пол
+							.form-multi-inputs__wrapper
+								.form-multi-inputs__radio.input-radio
+									input.visually-hidden(id='male', type='radio', name='gender', value='male' checked)
+									label.input-radio__label(for='male') Мужской
+								.form-multi-inputs__radio.input-radio
+									input.visually-hidden(id='female', type='radio', name='gender', value='male')
+									label.input-radio__label(for='female') Женский
+						.my-data__select-group
+							+select('my-data__input', '', 'type', 'type', '', 'Тип деятельности', 'Выберите', 'Юридическое лицо', 'Физическое лицо', 'Просто лицо', 'Опция для теста')
+							+select('my-data__input', '', 'position', 'position', '', 'Должность', 'Выберите', 'Владелец магазина', 'Директор')
+							+select('my-data__input', '', 'shop-quantity', 'shop-quantity', '', 'Количество магазинов', 'Выберите', '1-20', '21-50')
+							+select('my-data__input', '', 'trade', 'trade', '', 'Формат торговли', 'Выберите', 'Интернет-магазин', 'Точка на рынке')
+						button.my-data__submit.btn Сохранить
+						p.my-data__text Заполните всю информацию о себе и получите скидку 5%!
+
+

@@ -1,0 +1,344 @@
+.btnUp
+#popupLogin(class="mfp-hide")
+	.modal__container
+		.modal__content
+			.modal-close.mfp-close
+			ul.modal__tab.hidden-mob
+				li(data-tab="modal-tab-1").modal-tab-1.active Я уже зарегистрирован
+				li(data-tab="modal-tab-2").modal-tab-2 Я незарегистрирован
+			.modal__tab-content
+				.modal__tab-box.modal-tab-1.tab-active
+					.auth__form
+						.visible-mob
+							.modal-title
+								span.back-modal.back-parent
+								span Я уже зарегистрирован
+						form(data-toggle="validator", role="form", action="#", method="post")
+							.modal-tab-txt Чтобы задать вопрос,
+								span
+								| Вам необходимо войти на сайт
+							.modal-control.control__box.has-feedback
+								input(type="email", data-error="Укажите Ваш e-mail", placeholder="Ваш E-mail", required).form-control
+								.help-block.with-errors
+							.modal-control.control__box.has-feedback
+								input(type="password",  data-error="Укажите Ваш пароль", placeholder="Пароль", required).form-control
+								.help-block.with-errors
+								.clear
+								a.forgot-link(href="#").btn-forgot-show.hidden-mob Забыли пароль?
+							.modal-control.forgot-hide.control__box
+								input.contol-checkbox.color-black#checkModal(type="checkbox", required)
+								label.contol-label-check.color-black(for="checkModal") Я соглашаюсь с политикой обработки персональных данных
+							.modal-control.forgot-hide
+								button(type="submit").btn.btn-login Войти на сайт
+							.visible-mob
+								.modal-control.control-center
+									a.forgot-link(href="#").btn-forgot-show Забыли пароль?
+					.forgot__form
+						form(data-toggle="validator", role="form", action="#", method="post")
+							.forgot-title
+								span.back-modal.back-child
+								| Забыли пароль? не Беда!
+							.modal-tab-txt Пожалуйста введите Вашу эллектронную почту, указанную
+								br 
+								| при регистрации и мы отправим письмо с подробной нструкцией
+							.modal-control.control-box.control-group-btn.control__box.has-feedback
+								input(type="email", placeholder="Ваш E-mail",  data-error="Укажите Ваш e-mail", required).control-input
+								button(type="submit").control-btn.btn-forgot Отправить
+								.help-block.with-errors
+							a.forgot-link(href="#").btn-forgot-hide.hidden-mob Вспомнили пароль?
+							.clear
+						.modal-tab-txt.attention-txt
+							span Внимание!
+							br 
+							| Пароль хранится в зашифрованном виде.
+							br
+							| Это гарантирует безопасность всех ваших операций.
+							br
+							| Ваш пароль известен только вам.
+						.visible-mob
+							.modal-control.control-center
+								a.forgot-link(href="#").btn-forgot-hide Вспомнили пароль?
+				// /.modal-tab-1
+				.modal__tab-box.modal-tab-2
+					.visible-mob
+						.modal-title
+							span.back-modal.back-parent
+							span Я незарегистрирован
+					form(data-toggle="validator", role="form", action="#", method="post").form-reg
+						.modal-tab-txt Чтобы задать вопрос,
+							span
+							| Вам необходимо зарегистрироваться на сайте
+						.modal-control.control__box.has-feedback
+							input(type="text",  data-error="Укажите Ваше имя", placeholder="Ваше имя", required).form-control
+							.help-block.with-errors
+						.modal-control.control__box.has-feedback
+							input(type="text",  data-error="Укажите Вашу фамилию", placeholder="Ваша фамилия", required).form-control
+							.help-block.with-errors
+						.modal-control.control__box.has-feedback
+							input(type="tel",  data-error="Укажите Ваш телефон", placeholder="Ваш телефон", required).form-control
+							.help-block.with-errors
+						.modal-control.control__box.has-feedback
+							input(type="email",  data-error="Укажите Ваш e-mail", placeholder="E-mail", required).form-control
+							.help-block.with-errors
+						.modal-control.control__box.has-feedback
+							input(type="text",  value="Москва", data-error="Укажите Ваш город", placeholder="Ваш город", required).form-control
+							.help-block.with-errors
+							.clear
+							p.region-txt Если регион определился неверно, впишите Ваш город
+						.modal-control.control__box
+							.form-label Тип деятельности
+							.select__box
+								span.slct
+									span Юридическое лицо
+								ul.drop
+									li(data-value="disable") Тип деятельности
+									li(data-value="Юридическое лицо") Юридическое лицо
+									li(data-value="ИП") ИП
+									li(data-value="Розничный поупатель") Розничный поупатель
+									li(data-value="Совместные закупки") Совместные закупки
+								input(type="text", required).input-hidden
+						.modal-control.control__box
+							input.contol-checkbox.color-black#checkModal2(type="checkbox", required)
+							label.contol-label-check.color-black(for="checkModal2") Я соглашаюсь с политикой обработки персональных данных
+						.modal-control
+							button(type="submit").btn.btn-login Зарегистрироваться
+				// /.modal-tab-2
+			.modal__success-box
+				.modal__success
+					p.forgot-title письмо успешно отправлено
+					p Письмо с инструкциями отправлено Вам на указанный почтовый ящик. 
+						br 
+						| Пожалуйста, проверьте его:
+					ul.mail__list
+						li
+							a(href="#", target="_blank")
+								img(src="images/mails/mail.png", alt="#")
+						li
+							a(href="#", target="_blank")
+								img(src="images/mails/gmail.png", alt="#")
+						li
+							a(href="#", target="_blank")
+								img(src="images/mails/yamail.png", alt="#")
+						li
+							a(href="#", target="_blank")
+								img(src="images/mails/rmail.png", alt="#")
+					p Если Вы зарегистрированы на другом почтовом сервере,
+						br 
+						| пожалуйста, перейдите на этот сервер
+			.auth-option-box
+				.auth__option
+					.a-option-title Чтобы задать вопрос вам необходимо войти в аккаунт.
+						br
+						| Ниже выберите вариант авторизации.
+					ul.a-option-list
+						li
+							a(href="#",data-tab="modal-tab-1").btn.btn-white Я уже зарегистрирован
+						li
+							a(href="#",data-tab="modal-tab-2").btn.btn-white Я незарегистрирован
+
+			//-.modal__tab-content
+
+#modalBasket(class="mfp-hide")
+	.modal__container
+		.modal__content
+			.modal-close.mfp-close
+			h3 Ваш выбор добавлен в корзину
+			.modal-basket
+				a(href="#").btn.continue-shop Продолжить покупки
+				a(href="#").btn.btn-white Перейти в корзину
+// /.modalBasket
+
+#modalSubsuccess(class="mfp-hide")
+	.modal__container
+		.modal__content
+			.modal-close.mfp-close
+			h3 Подписка на рассылку
+			.modal-tab-txt Вы согласны с политикой 
+				|
+				a(href="#") обработки персональных данных 
+				| ?
+			.modal-basket
+				a(href="#").btn.sub-yes Да
+				a(href="#").btn.btn-white.sub-no Нет
+// /.modalBasket
+
+#modalTransport(class="mfp-hide")
+	.modal__container
+		.modal__content
+			.modal-close.mfp-close
+			h3 Транспортные 
+				|
+				br 
+				| компании-партенры
+			.transport__content
+				.transport-box
+					.transport-title Первая Экспедиционная Компания ООО "ПЭК"
+					ul.transport-list
+						li Телефон: 8(495) 660-11-11
+						li Сайт: www.pecom.ru
+				.transport-box
+					.transport-title Компания "Деловые линии"
+					ul.transport-list
+						li Телефон: 8-800-100-8000 
+							|
+							br 
+							| (звонок по России бесплатный)
+						li сайт: www.dellin.ru
+				.transport-box
+					.transport-title ЖелДорЭкспедиция
+					ul.transport-list
+						li Телефон: 8- 800-1005-505 
+							|
+							br 
+							| (звонок по России бесплатный)
+						li сайт: www.jde.ru
+				.transport-box
+					.transport-title Первая Экспедиционная Компания ООО "ПЭК"
+					ul.transport-list
+						li Телефон: 8-800-23456-50
+						li сайт: www.tk-kit.ru
+				.transport-box
+					.transport-title Компания "Деловые линии"
+					ul.transport-list
+						li Телефон: 8(495) 995-995-2
+						li сайт: www.baikalsr.ru 
+// /.modalBasket
+
+#popupEmail(class="mfp-hide")
+	.modal__container
+		.modal__content
+			.modal-close.mfp-close
+			.modal__tab-content
+				.auth__form
+					form(data-toggle="validator", role="form", action="#", method="post")
+						h3 Написать письмо
+						.modal-tab-txt Напишите интересующий Вас вопрос и мы ответим в ближайшее время
+						.modal-control.control__box
+							input(type="text", data-error="Укажите Ваше имя", placeholder="Ваше имя", required).form-control
+							.help-block.with-errors
+						.modal-control.control__box
+							input(type="email", data-error="Укажите Ваш e-mail", placeholder="Ваш E-mail", required).form-control
+							.help-block.with-errors
+						.modal-control.control__box
+							textarea(data-error="Укажите Ваше сообщение", placeholder="Ваше сообщение", required).form-control
+							.help-block.with-errors
+						.modal-control
+							button(type="submit").btn Отправить
+
+#modalColor(class="mfp-hide")
+	.modal__container
+		.modal__content
+			.modal-close.mfp-close
+			.modalColor-content
+				.m-color-title.visible-xs Вискоза
+				.clear.visible-xs
+				.modalColor-slider
+					.color-for-container
+						.color-for.slider
+							div
+								.color-for-img.color-v1
+								.color-for-name Серо-голубой
+							div
+								.color-for-img.color-v2
+								.color-for-name Серо-голубой 2
+							div
+								.color-for-img.color-v3
+								.color-for-name Серо-голубой 3
+							div
+								.color-for-img.color-v4
+								.color-for-name Серо-голубой 4
+							div
+								.color-for-img.color-v5
+								.color-for-name Серо-голубой 5
+							div
+								.color-for-img.color-v6
+								.color-for-name Серо-голубой 6
+							div
+								.color-for-img.color-v1
+								.color-for-name Серо-голубой
+							div
+								.color-for-img.color-v2
+								.color-for-name Серо-голубой 2
+							div
+								.color-for-img.color-v3
+								.color-for-name Серо-голубой 3
+							div
+								.color-for-img.color-v4
+								.color-for-name Серо-голубой 4
+							div
+								.color-for-img.color-v5
+								.color-for-name Серо-голубой 5
+							div
+								.color-for-img.color-v6
+								.color-for-name Серо-голубой 6
+					.color-nav-container
+						.color-nav.slider
+							div
+								.color-1.color-btn
+									+img('c1.png', 'images/catalog-color/')
+							div
+								.color-2.color-btn
+									+img('c2.png', 'images/catalog-color/')
+							div
+								.color-3.color-btn
+									+img('c3.png', 'images/catalog-color/')
+							div
+								.color-4.color-btn
+									+img('c4.png', 'images/catalog-color/')
+							div
+								.color-5.color-btn
+									+img('c5.png', 'images/catalog-color/')
+							div
+								.color-6.color-btn
+									+img('c6.png', 'images/catalog-color/')
+							div
+								.color-1.color-btn
+									+img('c1.png', 'images/catalog-color/')
+							div
+								.color-2.color-btn
+									+img('c2.png', 'images/catalog-color/')
+							div
+								.color-3.color-btn
+									+img('c3.png', 'images/catalog-color/')
+							div
+								.color-4.color-btn
+									+img('c4.png', 'images/catalog-color/')
+							div
+								.color-5.color-btn
+									+img('c5.png', 'images/catalog-color/')
+							div
+								.color-6.color-btn
+									+img('c6.png', 'images/catalog-color/')
+				.modalColor-text
+					.m-color-title.hidden-xs Вискоза
+					.clear
+					p В работе мы применяем только лучшее сырье и уникальную фурнитуру, не имеющую аналогов. Немецкие нити повышенной прочности, импортные ткани позволяют создавать комфортную и долговечную продукцию. Каждое из предлагаемых нами изделий отличается модельным и цветовым решением. В коллекции представлены дубленки, имеющие удлиненные, укороченные, прямые, приталенные, расклешенные силуэты. Декорирование этой верхней одежды выполнено при помощи эффектной строчки, оригинальных воротников, капюшонов, поясов, карманов.
+					.m-color-action
+						a(href="#").btn.btn-white.btn-see-other Смотреть другие ткани
+// /.modalColor
+#popupCity(class="mfp-hide")
+	.modal__container.modal__city
+		.modal__content
+			.modal-close.mfp-close
+			.modal__tab-content
+				.auth__form
+					form(role="form", action="#", method="post")
+						h3 Выберите ваш регион
+						.modal-control.control__box
+							input(type="text", placeholder="Введите название насленного пункта").form-control
+						.modal-control
+							.modal__city-title Популярные города
+							ul.modal__city-list
+								li 
+									a(href="#").m-cityLink Москва
+								li 
+									a(href="#").m-cityLink Санкт-Петербург
+								li 
+									a(href="#").m-cityLink Екатеринбург
+								li 
+									a(href="#").m-cityLink Новосибирск
+								li 
+									a(href="#").m-cityLink Ростов-на-Дону
+						.modal-control.m__city-control
+							a(href="#").m__city-btn-cancel Отменить
+							button(type="submit").btn.m__city-btn-ok Выбрать

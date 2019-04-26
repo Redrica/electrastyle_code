@@ -1,0 +1,101 @@
+/* страница Мои данные */
+
+.my-data {
+  padding-top: 32px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+  @include desktop-start {
+    padding-top: 12px;
+  }
+
+  @include laptop {
+    padding-top: 16px;
+  }
+
+  &__form {
+
+    @include tablet {
+      padding-left: 192px;
+    }
+
+    @include desktop-start {
+      padding-left: 165px;
+    }
+  }
+
+  &__input {
+    margin: 0 0 16px;
+
+    @include tablet {
+      margin-bottom: 19px;
+    }
+
+    & label {
+
+      @include tablet {
+        left: -194px;
+      }
+
+      @include desktop-start {
+        left: -175px;
+      }
+    }
+  }
+
+  &__fields-group {
+    margin-top: 55px;
+
+    @include tablet {
+      margin-top: 73px;
+    }
+  }
+
+  &__radio-group {
+    margin-top: 22px;
+    margin-bottom: 57px;
+
+    @include tablet {
+      margin-top: 20px;
+      margin-bottom: 68px;
+    }
+  }
+
+  &__select-group {
+    margin-bottom: 37px;
+  }
+
+  &__submit {
+    width: 100%;
+    margin-bottom: 28px;
+    padding: 9px 20px 13px;
+    text-align: center;
+    background-color: $beige;
+
+    @include tablet {
+      width: 225px;
+      margin-top: 40px;
+      margin-bottom: 33px;
+    }
+  }
+
+  &__text {
+    @include text(18px, 27px, 400);
+    margin-bottom: 14px;
+    padding: 0 45px;
+    text-align: center;
+
+    @include tablet {
+      margin-bottom: 39px;
+      padding: 0;
+      text-align: left;
+      letter-spacing: -0.01em;
+    }
+
+    @include laptop {
+      letter-spacing: 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+article.article-card
+	a(href='#').article-card__link
+		.article-card__img-box
+			picture
+				source(media="(max-width: 360px)", type="image/jpg", srcset="images/article/art-card_360.jpg")
+				source(media="(max-width: 1023px)", type="image/jpg", srcset="images/article/art-card_768.jpg")
+				source(media="(max-width: 1024px)", type="image/jpg", srcset="images/article/art-card_1024.jpg")
+				source(media="(max-width: 1799px)", type="image/jpg", srcset="images/article/art-card_1366.jpg")
+				img(src="images/article/art-card_1920.jpg", alt="#").img-responsive.article-card__img
+	p.article-card__text
+		span.article-card__date 10.10.17
+		span.article-card__info Бренд Electrastyle отправил помощь пострадавшим от пожара ростовчанам
+
+

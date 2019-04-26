@@ -1,0 +1,236 @@
+include ../mixins/image
+.retail__container
+	.container
+		.retail__box
+			.h1 купить в розницу
+			p В настоящий момент на сайте ELECTRASTYLE можно оформлять только оптовые заказы.
+				br
+				| Розничные покупки Вы можете совершать в магазинах Вашего города, а так же в Интернет-магазинах.
+			.h2 Магазины в вашем городе
+		.shops__adress
+			ul.tab__adress
+				li(data-tab="tab1").active Список
+				li(data-tab="tab2") Карта
+			.clear
+			.adress__left.retail__block.tab1
+				.adress__search
+					p.center.hidden-tablet Введите Ваш город и мы покажем магазины 
+						br
+						| где можно купить одежду от Electrastylе
+					form(action="#", method="post")
+						.adress__search-control.search-active
+							input(type="text", value="г. Москва", placeholder="Введите Ваш город и мы покажем магазины").form-control
+							button(type="submit").btn.btn-white Найти
+							span.reset-search
+				.adress__scroll
+					.scrollBox.a-scrollBox
+						ul.scroll__list
+							li
+								.shop-title Магазин “Теплая одежда”
+								ul.shop-info
+									li м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, 
+									li ул. Мира д 15 Митинская ул., 36 корпус 1, офис 405, 
+									li Москва, 125430, Дубравная ул., 34/29, Москва, 125222
+
+								.shop-dop
+									ul.shop-soc
+										li
+											a(href="#").shop-soc-inst
+										li
+											a(href="#").shop-soc-vk
+										li
+											a(href="#").shop-soc-fb
+										li
+											a(href="#").shop-soc-yt
+									a(href="#", data-id="0").view-map Посмотреть на карте											
+									.visible-tablet.shop-phone
+										a(href="tel:+7999888766") +7 999 888 77 66
+								span.shop-more Подробнее
+							li
+								.shop-title Сеть магазинов “Бархат”
+								ul.shop-info
+									li м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, 
+									li ул. Мира д 15 Митинская ул., 36 корпус 1, офис 405, 
+
+								.shop-dop
+									ul.shop-soc
+										li
+											a(href="#").shop-soc-inst
+										li
+											a(href="#").shop-soc-vk
+										li
+											a(href="#").shop-soc-fb
+										li
+											a(href="#").shop-soc-yt
+									a(href="#", data-id="1").view-map Посмотреть на карте											
+									.visible-tablet.shop-phone
+										a(href="tel:+7999888766") +7 999 888 77 66											
+								span.shop-more Подробнее
+							li
+								.shop-title Сеть магазинов “STYLVO”
+								ul.shop-info
+									li м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, 
+									li ул. Мира д 15 Митинская ул., 36 корпус 1, офис 405, 
+									li Москва, 125430, Дубравная ул., 34/29, Москва, 125222
+
+								.shop-dop
+									ul.shop-soc
+										li
+											a(href="#").shop-soc-inst
+										li
+											a(href="#").shop-soc-vk
+										li
+											a(href="#").shop-soc-fb
+										li
+											a(href="#").shop-soc-yt
+									a(href="#", data-id="2").view-map Посмотреть на карте											
+									.visible-tablet.shop-phone
+										a(href="tel:+7999888766") +7 999 888 77 66											
+								span.shop-more Подробнее
+							li
+								.shop-title Сеть магазинов “Бархат”
+								ul.shop-info
+									li м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, 
+									li ул. Мира д 15 Митинская ул., 36 корпус 1, офис 405, 
+
+								.shop-dop
+									ul.shop-soc
+										li
+											a(href="#").shop-soc-inst
+										li
+											a(href="#").shop-soc-vk
+										li
+											a(href="#").shop-soc-fb
+										li
+											a(href="#").shop-soc-yt
+									a(href="#", data-id="3").view-map Посмотреть на карте											
+									.visible-tablet.shop-phone
+										a(href="tel:+7999888766") +7 999 888 77 66											
+								span.shop-more Подробнее
+							li
+								.shop-title Магазин “Теплая одежда”
+								ul.shop-info
+									li м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, 
+									li ул. Мира д 15 Митинская ул., 36 корпус 1, офис 405, 
+									li Москва, 125430, Дубравная ул., 34/29, Москва, 125222
+
+								.shop-dop
+									ul.shop-soc
+										li
+											a(href="#").shop-soc-inst
+										li
+											a(href="#").shop-soc-vk
+										li
+											a(href="#").shop-soc-fb
+										li
+											a(href="#").shop-soc-yt
+									a(href="#", data-id="4").view-map Посмотреть на карте											
+									.visible-tablet.shop-phone
+										a(href="tel:+7999888766") +7 999 888 77 66											
+								span.shop-more Подробнее
+							li
+								.shop-title Сеть магазинов “STYLVO”
+								ul.shop-info
+									li м. Охотный ряд, ТЦ Охотный ряд, Electrastyle, 
+									li ул. Мира д 15 Митинская ул., 36 корпус 1, офис 405, 
+
+								.shop-dop
+									ul.shop-soc
+										li
+											a(href="#").shop-soc-inst
+										li
+											a(href="#").shop-soc-vk
+										li
+											a(href="#").shop-soc-fb
+										li
+											a(href="#").shop-soc-yt
+									a(href="#", data-id="5").view-map Посмотреть на карте											
+									.visible-tablet.shop-phone
+										a(href="tel:+7999888766") +7 999 888 77 66											
+								span.shop-more Подробнее
+
+				// /.adress__scroll
+
+
+			// /.adress__left
+			.shops__maps.retail__block.tab2
+				.adress__search.visible-tablet
+					p.center Введите Ваш город и мы покажем магазины где можно купить одежду от Electrastylе
+					form(action="#", method="post")
+						.adress__search-control.search-active
+							input(type="text", value="г. Москва", placeholder="Введите Ваш город и мы покажем магазины").form-control
+							span.reset-search
+				.clear
+				#map
+				ul.baloon__list
+
+			// /.shops__maps
+		
+		.retail__online
+			.h2.center Онлайн магазины
+			p.center Доставка по России и СНГ
+			.online__slider
+				.onlineItem.slider.slider__arrow
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo1.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo1.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo3.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo3.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo1.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo1.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo3.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo3.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+				.clear
+				.visible-tablet.online-all
+					a(href="#") Показать все магазины
+			.h2.center.hidden-tablet Electrastyle желает вам
+				br
+				| приятных покупок!
+		// /.retail__online

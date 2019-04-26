@@ -1,0 +1,11 @@
+mixin select(divClassString, inputClass, idString, nameString, labelClass, labelText, defaultValue, ...options)
+	.input-field(class=divClassString)
+		select.input-field__input(class=inputClass id=idString name=nameString)
+			option(value='')= defaultValue
+			each option in options
+				option= option
+		label.input-field__label(class=labelClass for=idString)= labelText
+
+//- класс обертки, класс инпута, id,
+//- имя поля, класс для label, текст подписи
+//- значение по умолчанию, опции

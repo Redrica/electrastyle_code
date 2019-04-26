@@ -1,0 +1,133 @@
+/* Форма добавления магазина на странице МОИ МАГАЗИНЫ */
+
+.add-shop {
+  display: none;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet {
+      flex-wrap: nowrap;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__fields {
+    width: 100%;
+
+    @include tablet {
+      max-width: 439px;
+    }
+
+    @include desktop-start {
+      width: 100%;
+      max-width: 409px;
+    }
+
+    @media (min-width: 1025px) {
+      max-width: 439px;
+    }
+
+    @include laptop {
+      width: 100%;
+      max-width: 591px;
+      padding-left: 170px;
+    }
+
+    @media (min-width: 1800px) {
+      max-width: 668px;
+    }
+
+    &--bottom {
+
+      @include tablet {
+        margin-left: auto;
+      }
+
+      @include laptop {
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      & .add-shop__input {
+        margin-bottom: 28px;
+
+      }
+    }
+  }
+
+  &__input {
+    margin: 0 0 15px;
+
+    @include tablet {
+      margin-bottom: 19px;
+    }
+  }
+
+  &__image {
+    order: -1;
+    width: 100%;
+    margin-bottom: 17px;
+
+    @include tablet {
+      width: auto;
+      margin-right: 39px;
+      margin-bottom: 0;
+    }
+
+    @include laptop {
+      order: 0;
+      margin-right: 0;
+      margin-left: 29px;
+    }
+
+    @media (min-width: 1800px) {
+      margin-left: 52px;
+    }
+  }
+
+  &__address {
+    margin: 0 0 55px;
+
+    & .add-shop__input {
+      margin: 0 0 -5px;
+
+      @include tablet {
+        margin: 0 0 15px;
+      }
+    }
+
+    & input[name='street'] + label {
+
+      @include tablet {
+        display: none;
+      }
+
+      @include laptop {
+        display: block;
+      }
+    }
+  }
+
+  &__address-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    & .add-shop__input {
+      width: 46.5%;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    text-align: center;
+    padding: 9px 20px 13px;
+    background-color: $beige;
+
+    @include tablet {
+      width: 225px;
+      margin-top: 40px;
+    }
+  }
+}

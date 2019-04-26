@@ -1,0 +1,418 @@
+/* стили для страницы LOOKBOOK */
+
+.lookbook {
+  padding: 0 18px;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  &__inner {
+    margin: 0 auto;
+
+    @include tablet {
+      max-width: 653px;
+    }
+
+    @media (min-width: 920px) {
+      max-width: 807px;
+    }
+
+    @include laptop {
+      margin-top: -14px;
+      padding-bottom: 30px;
+    }
+
+    @include desktop-wide {
+      max-width: 1215px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+
+    @include tablet {
+      max-width: initial;
+      float: none;
+    }
+
+    &--main {
+      position: relative;
+      margin: 0 auto 47px;
+      width: 100%;
+      max-width: 500px;
+
+      @media (min-width: 600px) {
+        max-width: initial;
+      }
+
+      @include tablet {
+        margin-bottom: 42px;
+      }
+
+      @include desktop-start {
+        margin-bottom: 61px;
+      }
+
+      @include desktop-wide {
+        margin-bottom: 76px;
+      }
+
+      & .lookbook__title-box {
+        position: static;
+
+        @include tablet {
+          position: absolute;
+          left: -106px;
+          transform: translate(0, -50%) rotate(-90deg);
+        }
+
+        @include desktop-start {
+          left: -132px;
+          transform: translate(0, -70%) rotate(-90deg);
+        }
+
+        @include laptop {
+          left: -142px;
+        }
+
+        @include desktop-wide {
+          left: -162px;
+        }
+      }
+
+      & .lookbook__title {
+        margin-top: -10px;
+      }
+
+      & .lookbook__img-box {
+        max-width: initial;
+      }
+
+      &.lookbook__hashtag::before {
+        right: 0;
+        bottom: -42px;
+
+        @include tablet {
+          bottom: -47px;
+        }
+
+        @include desktop-start {
+          bottom: -72px;
+        }
+
+        @include desktop-wide {
+          bottom: -78px;
+        }
+      }
+    }
+
+    &--left {
+      padding-left: 55px;
+      float: right;
+
+      @media (min-width: 600px) {
+        float: none;
+        padding-left: 0;
+      }
+
+      & .lookbook__title-box {
+        left: -30px;
+        transform: translate(0, -50%) rotate(-90deg);
+
+        @media (min-width: 600px) {
+          position: static;
+          transform: none;
+        }
+      }
+    }
+
+    &--right {
+      padding-right: 55px;
+      float: left;
+
+      @media (min-width: 600px) {
+        float: none;
+        padding-right: 0;
+      }
+
+      & .lookbook__title-box {
+        right: -30px;
+        transform: translate(0, -50%) rotate(-90deg);
+
+        @media (min-width: 600px) {
+          position: static;
+          transform: none;
+        }
+      }
+    }
+
+    &:hover {
+
+      & .lookbook__hover {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  &__title-box {
+    position: absolute;
+    top: 50%;
+    transform-origin: center;
+    text-align: center;
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
+
+    @include desktop-start {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__title {
+    @include text(18px, 48px, 400);
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @include desktop-start {
+      font-size: 30px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      content: '';
+      width: 34px;
+      height: 1px;
+      background-color: $beige;
+    }
+
+    &::before {
+      left: -60px;
+    }
+
+    &::after {
+      right: -60px;
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    width: 100%;
+    max-width: 374px;
+
+    @media (min-width: 600px) {
+      max-width: initial;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image:
+      linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 40%,
+      transparentize($beige, 0.2) 70%,
+      $beige 85.54%,
+      transparentize($beige, 0.2) 95%,
+      transparentize($beige, 0.5)),
+
+      linear-gradient(
+      to bottom,
+      transparentize($beige, 0.7) 0,
+      transparentize($beige, 0.7) 100%);
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    width: 150px;
+    padding: 10px 20px 12px;
+    transform: translate(-50%, 0);
+    background-color: $white;
+
+    @include tablet {
+      width: 200px;
+      padding: 13px 20px;
+    }
+  }
+
+  &__hashtag::before {
+    @include text(14px, 40px, 400);
+    position: absolute;
+    content: '#ELECTRASTYLE';
+    color: transparentize($gray-main, 0.5);
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include desktop-start {
+      font-size: 24px;
+      line-height: 48px;
+    }
+  }
+
+  &__content {
+    max-width: 500px;
+    margin: 0 auto;
+
+    @media (min-width: 600px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: initial;
+    }
+  }
+
+  &__item {
+    margin-bottom: 46px;
+
+    @media (min-width: 600px) {
+      width: calc((100% - 40px) / 2);
+      margin-bottom: 0;
+    }
+
+    @include tablet {
+      position: relative;
+      width: calc((100% - 54px) / 2);
+    }
+
+    @include desktop-start {
+      width: calc((100% - 58px) / 2);
+    }
+
+    @include desktop-wide {
+      width: calc((100% - 144px) / 2);
+    }
+
+    &:nth-child(2) {
+      margin-top: 40px;
+
+      @include desktop-wide {
+        margin-top: 72px;
+      }
+    }
+
+    &:nth-child(2n+1):not(:first-child) {
+
+      @include tablet {
+        margin-top: 33px;
+      }
+
+      @include desktop-start {
+        margin-top: 21px;
+      }
+
+      @include laptop {
+        margin-top: 30px;
+      }
+
+      @include desktop-wide {
+        margin-top: 17px;
+      }
+    }
+
+    &:nth-child(2n):not(:nth-child(2)) {
+
+      @include tablet {
+        margin-top: 73px;
+      }
+
+      @include desktop-start {
+        margin-top: 65px;
+      }
+
+      @include laptop {
+        margin-top: 77px;
+      }
+
+      @include desktop-wide {
+        margin-top: 85px;
+      }
+    }
+
+    &::before {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
+
+    &.lookbook__item:nth-child(4n+1).lookbook__hashtag::before {
+
+      @include tablet {
+        top: 48%;
+        left: -93px;
+        transform: rotate(-90deg);
+      }
+
+      @include desktop-start {
+        top: 52%;
+        left: -146px;
+      }
+
+      @include laptop {
+        left: -151px;
+      }
+
+      @include desktop-wide {
+        top: 45%;
+        left: -178px;
+      }
+    }
+
+    &.lookbook__item:nth-child(4n+4).lookbook__hashtag::before {
+
+      @include tablet {
+        top: 52%;
+        right: -93px;
+        transform: rotate(-90deg);
+      }
+
+      @include desktop-start {
+        top: 56%;
+        right: -143px;
+      }
+
+      @include laptop {
+        right: -151px;
+      }
+
+      @include desktop-wide {
+        top: 59%;
+        right: -190px;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}

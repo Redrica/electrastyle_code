@@ -1,0 +1,597 @@
+/* страница Менеджера */
+
+.manager {
+  padding: 0 18px;
+
+  @include tablet-middle {
+    padding: 0;
+  }
+
+  &__content {
+    margin-top: -3px;
+
+    @include desktop-start {
+      margin-top: 33px;
+    }
+
+    @include laptop {
+      display: flex;
+      margin-bottom: 76px;
+    }
+  }
+
+  &__card {
+    margin-bottom: 22px;
+    padding: 0 0 19px;
+    background-color: transparentize($beige, 0.7);
+
+    @include mobile-wide {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    @include tablet-middle {
+      margin-bottom: 37px;
+    }
+
+    @include laptop {
+      width: 970px;
+    }
+
+    @include desktop-wide {
+      width: 1100px;
+    }
+  }
+  
+  &__img-box {
+    width: 100%;
+    margin: 0 auto 22px;
+
+    @media (min-width: 361px) {
+      width: 100%;
+    }
+
+    @media (min-width: 460px) {
+      flex-shrink: 0;
+      width: 150px;
+      float: right;
+      margin: 0 0 0 20px;
+    }
+
+    @include mobile-wide {
+      float: none;
+      order: 1;
+      width: 236px;
+      margin-left: 0;
+      transform: none;
+    }
+    
+    @include tablet-middle {
+      width: 325px;
+    }
+    
+    @include laptop {
+      width: 374px;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__details {
+    padding: 0 18px;
+
+    @media (min-width: 460px) {
+      padding: 12px 0 0 18px;
+    }
+
+    @include tablet {
+      padding: 25px 0 0 30px;
+    }
+
+    @include tablet-middle {
+      display: flex;
+      flex-direction: column;
+      padding-left: 54px;
+    }
+
+    @include laptop {
+      padding: 40px 0 0 80px;
+    }
+
+    @include desktop-wide {
+      padding-top: 37px;
+    }
+  }
+
+  &__title {
+    @include text(20px, 24px, 400);
+    text-transform: uppercase;
+    margin-bottom: -2px;
+
+    @media (min-width: 460px) {
+      max-width: 50%;
+    }
+
+    @include mobile-wide {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @include laptop {
+      max-width: initial;
+      margin-bottom: 2px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    @include desktop-wide {
+      margin-bottom: 5px;
+      font-size: 36px;
+    }
+  }
+
+  &__position {
+    @include text(16px, 18px, 400);
+    margin-bottom: 17px;
+
+    @include mobile-wide {
+      position: relative;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    @include tablet-middle {
+      margin-bottom: 15px;
+    }
+
+    @include laptop {
+      margin-bottom: 33px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    @include desktop-wide {
+      margin-bottom: 31px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &::before {
+
+      @include mobile-wide {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 40px;
+        height: 1px;
+        background-color: $beige;
+      }
+
+      @include laptop {
+        margin-bottom: -15px;
+      }
+    }
+  }
+
+  &__contacts {
+    margin-bottom: -12px;
+
+    @include mobile-wide {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include tablet-middle {
+      order: 1;
+    }
+  }
+
+  &__link-wrapper {
+
+    & .manager__link {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    @include text(16px, 18px, 400);
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-left: 36px;
+    transition: 0.3s;
+
+    @include tablet {
+      padding-left: 30px;
+    }
+
+    @include tablet-middle {
+      padding-left: 36px;
+    }
+
+    @include laptop {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    & svg {
+      position: absolute;
+      left: 0;
+    }
+
+    & path {
+      fill: $beige
+    }
+
+    &:hover {
+      color: $beige;
+    }
+
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+
+  &__link-more {
+    @include text(16px, 28px, 400);
+    float: none;
+
+    @include tablet-middle {
+      display: none;
+    }
+  }
+
+  &__about {
+
+    @include mobile-wide {
+      padding-bottom: 18px;
+    }
+
+    @include desktop-wide {
+      margin-bottom: 15px;
+    }
+
+    & p {
+      @include text(14px, 18px, 400);
+      display: none;
+      margin-bottom: 20px;
+
+      @include mobile-wide {
+        padding-right: 25px;
+      }
+
+      @include tablet-middle {
+        display: block;
+      }
+
+      @include laptop {
+        padding-right: 100px;
+        line-height: 20px;
+      }
+
+      @include desktop-wide {
+        line-height: 24px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__write {
+    @include text(14px, 38px, 400);
+    margin-bottom: 36px;
+    padding: 2px 20px 3px;
+    border-color: $beige;
+    color: $beige;
+
+    @include mobile-wide {
+      width: 242px;
+      margin-bottom: 23px;
+      font-size: 16px;
+    }
+
+    @include tablet-middle {
+      margin-bottom: 37px;
+    }
+
+    @include laptop {
+      margin-bottom: 0;
+      padding: 7px 11px 8px;
+      font-size: 18px;
+    }
+
+    & svg {
+      margin-right: 10px;
+    }
+
+    & path {
+      fill: currentColor;
+    }
+  }
+
+  &__features {
+    position: relative;
+    width: 220px;
+    margin: 0 auto 11px;
+
+    @include mobile-wide {
+      width: 100%;
+    }
+
+    @include tablet {
+      margin-bottom: 75px;
+    }
+
+    @include laptop {
+      width: auto;
+      margin: 0 0 0 auto;
+    }
+
+    @include desktop-wide {
+      margin-left: 73px;
+    }
+
+    & .slick-arrow {
+      width: 36px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+    }
+
+    & .slick-prev {
+      top: 29%;
+      background-image: url("../images/svg/arrow-dark-big.svg");
+      transform: rotate(-90deg) translate(7px, -20px);
+    }
+
+    & .slick-next {
+      top: 23%;
+      background-image: url("../images/svg/arrow-dark-big.svg");
+      transform: rotate(90deg) translate(0, -20px);
+    }
+  }
+
+  &__slider {
+
+    @include mobile-wide {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include laptop {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__feature {
+    @include text(16px, 24px, 400);
+    position: relative;
+    width: 170px;
+    padding: 84px 0 20px 0;
+    text-align: center;
+    color: $beige;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px 75px;
+    cursor: pointer;
+    outline: none;
+
+    @include tablet {
+      width: 215px;
+    }
+
+    @include tablet-middle {
+      padding-top: 90px;
+      background-size: 87px 82px;
+    }
+
+    @include laptop {
+      width: auto;
+      margin-bottom: 20px;
+    }
+
+    @include desktop-wide {
+      font-size: 18px;
+    }
+
+    &:hover {
+
+      & .manager__popup {
+        @media (min-width: 1025px) {
+          display: block;
+        }
+      }
+    }
+
+    & span:first-child {
+      @include text(30px, 24px, 400);
+      display: inline-block;
+      margin-right: 13px;
+      vertical-align: bottom;
+
+      @include desktop-wide {
+        font-size: 36px;
+      }
+    }
+
+    &--reward {
+      background-image: url("../images/icons/manager_rew.png");
+    }
+
+    &--certificate {
+      background-image: url("../images/icons/manager_sert.png");
+    }
+
+    &--thanks {
+      background-image: url("../images/icons/manager_thanks.png");
+    }
+  }
+
+  &__popups {
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__popup {
+    @include text(14px, 14px, 400);
+    position: absolute;
+    display: none;
+    top: 115px;
+    left: 50%;
+    z-index: 50;
+    width: 280px;
+    padding: 20px 10px;
+    background-color: $white;
+    border: 1px solid $beige;
+    color: $gray-main;
+    transform: translate(-50%, 0);
+
+    @include tablet-middle {
+      top: 125px;
+      line-height: 16px;
+    }
+
+    @include laptop {
+      line-height: 20px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -7px;
+      left: 50%;
+      content: '';
+      width: 12px;
+      height: 12px;
+      background-color: $white;
+      border-top: 1px solid $beige;
+      border-left: 1px solid $beige;
+      transform: translate(-50%, 0) rotate(45deg);
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__pop-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &.btn-cross::before,
+    &.btn-cross::after {
+      width: 13px;
+    }
+
+    @media (min-width: 1025px) {
+      display: none;
+    }
+  }
+
+  &__offer {
+    @include text(14px, 22px, 400);
+    padding-top: 13px;
+    padding-left: 54px;
+    background: url("../images/svg/star.svg") no-repeat 0;
+    background-position: left 0 top;
+    background-size: 42px 42px;
+
+    @include tablet {
+      padding-left: 61px;
+    }
+
+    @include mobile-wide {
+      padding-top: 17px;
+      padding-left: 66px;
+      background-size: 47px 47px;
+    }
+
+    @include laptop {
+      font-size: 16px;
+    }
+  }
+
+  &__offer-title {
+    @include text(18px, 24px, 400);
+    position: relative;
+    margin-bottom: 43px;
+    text-transform: uppercase;
+
+    @include mobile-wide {
+      font-size: 20px;
+    }
+
+    @include tablet-middle {
+      font-size: 22px;
+    }
+
+    @include laptop {
+      margin-bottom: 46px;
+      font-size: 24px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -23px;
+      left: 0;
+      width: 50px;
+      height: 1px;
+      background-color: $beige;
+
+      @include laptop {
+        bottom: -26px;
+      }
+    }
+  }
+
+  &__offer-text {
+    @include text(14px, 22px, 400);
+    padding-right: 40px;
+
+    @include laptop {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  & .container {
+    margin-bottom: 38px;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+
+    @include desktop-start {
+      margin-bottom: 120px;
+    }
+
+    @include laptop {
+      margin-bottom: 80px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+mixin team-card(imgUrl, imgName, personFirstName, personLastName, personPos, btnText)
+	.team-card
+		.team-card__img-box
+			img.team-card__img.img-responsive(src=imgUrl+imgName alt='#')
+		p.team-card__name= personFirstName
+			|
+			br
+			= personLastName
+		p.team-card__position= personPos
+		a.team-card__link.btn.btn-white(href='#')= btnText

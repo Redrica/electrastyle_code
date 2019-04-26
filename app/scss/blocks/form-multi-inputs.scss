@@ -1,0 +1,53 @@
+/* страница Мои данные */
+
+.form-multi-inputs {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    margin: 0;
+    opacity: 0.5;
+
+    @include tablet {
+      top: 9px;
+      left: -195px;
+    }
+
+    @include desktop-start {
+      left: -175px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__input {
+
+    & input {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+
+    &:nth-child(1) {
+      width: 70px;
+      margin-right: 14px;
+    }
+
+    &:nth-child(2) {
+      width: 116px;
+      margin-right: 14px;
+    }
+
+    &:nth-child(3) {
+      width: 122px;
+    }
+  }
+
+  &__radio {
+    margin-right: 47px;
+  }
+}

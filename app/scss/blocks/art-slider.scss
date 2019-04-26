@@ -1,0 +1,377 @@
+/* стили для слайдера страницы СТАТЬЯ */
+
+.art-slider {
+  max-width: 678px;
+
+  @include tablet {
+    max-width: initial;
+  }
+
+  &.art-slider--main {
+
+    & .art-slider__content {
+      margin-bottom: 15px;
+
+      @include tablet {
+        margin-bottom: 18px;
+      }
+
+      @include desktop-start {
+        margin-bottom: 25px;
+      }
+
+      @include laptop {
+        margin-bottom: 26px;
+      }
+    }
+
+    & .art-slider__img-box {
+      margin-bottom: 0;
+    }
+
+    & .art-slider__current {
+      @include text(25px, 15px, 400);
+      margin-right: 9px;
+
+      @include tablet {
+        font-size: 35px;
+        margin-right: 30px;
+      }
+    }
+
+    & .art-slider__all {
+      @include text(15px, 15px, 400);
+      position: relative;
+
+      @include tablet {
+        font-size: 25px;
+      }
+
+      &::before {
+        position: absolute;
+        content: '/';
+        top: 2px;
+        left: -8px;
+
+        @include tablet {
+          top: 9px;
+          left: -23px;
+        }
+      }
+    }
+
+    & .slick-arrow {
+      top: 40%;
+      height: 40px;
+
+      @include tablet {
+        top: 44%;
+        height: 40px;
+      }
+
+      @media (min-width: 920px) {
+        top: 50%;
+        height: 40px;
+      }
+
+      @include desktop-start {
+        top: 50%;
+        height: 40px;
+      }
+    }
+
+    & .slick-next {
+      right: -37px;
+
+      @include tablet {
+        right: -98px;
+      }
+
+      @include desktop-start {
+        right: -102px;
+      }
+
+      @include laptop {
+        right: -120px;
+      }
+    }
+
+    & .slick-prev {
+      left: -37px;
+
+      @include tablet {
+        left: -98px;
+      }
+
+      @include desktop-start {
+        left: -102px;
+      }
+
+      @include laptop {
+        left: -130px;
+      }
+    }
+
+    & .slick-prev::before,
+    & .slick-next::before {
+
+      @include tablet {
+        width: 52px;
+        height: 23px;
+      }
+    }
+  }
+
+  &.art-slider--blog {
+
+    & .art-slider__img-box {
+      margin-bottom: 14px;
+
+      @include tablet {
+        margin-bottom: 15px;
+      }
+
+      @include desktop-start {
+        margin-bottom: 13px;
+      }
+
+      @include laptop {
+        margin-bottom: 26px;
+      }
+
+      @include desktop-wide {
+        margin-bottom: 20px;
+      }
+    }
+
+    & p.art-slider__text {
+      @include text(15px, 23px, 400);
+      margin-bottom: 0;
+
+      @include tablet {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      @include desktop-start {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      @include laptop {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    & .slick-prev {
+
+      @include tablet {
+        left: 10px;
+      }
+
+      @include laptop {
+        left: 5px;
+      }
+
+      @include desktop-wide {
+        left: 15px;
+      }
+    }
+
+    & .slick-next {
+
+      @include tablet {
+        right: 10px;
+      }
+
+      @include laptop {
+        right:5px;
+      }
+
+      @include desktop-wide {
+        right: 15px;
+      }
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include tablet {
+      margin-bottom: 15px;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & p.art-slider__text {
+    @include text(15px, 23px, 400);
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    @media (min-width: 1025px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    @include laptop {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  &__date {
+    position: relative;
+    padding-right: 8px;
+    margin-right: 9px;
+
+    @include tablet {
+      padding-right: 12px;
+      margin-right: 11px;
+    }
+
+    @include laptop {
+      padding-right: 13px;
+      margin-right: 12px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      content: '';
+      width: 1px;
+      height: 10px;
+      background-color: $gray-main;
+      transform: translate(0, -50%);
+
+      @include tablet {
+        height: 12px;
+      }
+
+      @media (min-width: 1024px) {
+        top: 52%;
+        height: 20px;
+      }
+    }
+  }
+
+  &__counter {
+    text-align: center;
+  }
+
+  &__current {
+    @include text(25px, 15px, 400);
+    margin-right: 9px;
+
+    @include desktop-start {
+      font-size: 40px;
+      margin-right: 30px;
+    }
+  }
+
+  &__all {
+    @include text(15px, 15px, 400);
+    position: relative;
+
+    @include desktop-start {
+      font-size: 30px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '/';
+      top: 2px;
+      left: -8px;
+
+      @include desktop-start {
+        top: 9px;
+        left: -23px;
+      }
+    }
+  }
+
+  /* настройки для slick */
+
+  & .slick-arrow {
+    top: 50%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-63%);
+  }
+
+  & .slick-prev {
+    left: 0;
+
+    @include laptop {
+      left: -65px;
+    }
+
+    @include desktop-wide {
+      left: -100px;
+    }
+  }
+
+  & .slick-next {
+    right: 0;
+
+    @include laptop {
+      right: -65px;
+    }
+
+    @include desktop-wide {
+      right: -100px;
+    }
+  }
+
+  & .slick-prev::before,
+  & .slick-next::before {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 10px;
+    background-image: url("../images/svg/arrow-select.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform-origin: center;
+
+    @include tablet {
+      width: 35px;
+      height: 16px;
+      background-image: url("../images/svg/arrow-dark-big.svg");
+    }
+
+    @include laptop {
+      width: 52px;
+      height: 23px;
+    }
+  }
+
+  & .slick-prev::before {
+    left: 5px;
+    transform:  translateY(-50%) rotate(-90deg);
+
+    @include tablet {
+      left: 0;
+    }
+  }
+
+  & .slick-next::before {
+    right: 5px;
+    transform: translateY(-50%) rotate(90deg);
+
+    @include tablet {
+      right: 0;
+    }
+  }
+}

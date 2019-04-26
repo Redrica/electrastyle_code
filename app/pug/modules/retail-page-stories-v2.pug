@@ -1,0 +1,99 @@
+include ../mixins/image
+.retail__container.retail__stories
+	#retail
+	.container
+		.retail__box
+			.h1 Где купить
+			p В настоящий момент на сайте ELECTRASTYLE можно оформлять только оптовые заказы.
+				br
+				| Розничные покупки Вы можете совершать в магазинах Вашего города, а так же в Интернет-магазинах.
+			.h2 Магазины в вашем городе
+		.shops__adress
+			.adress__left
+				.adress__search
+					p.center Введите Ваш город и мы покажем магазины 
+						br
+						| где можно купить одежду от Electrastylе
+					form(action="#", method="post")
+						.adress__search-control.search-active
+							input(type="text", value="г. Москва", placeholder="Введите Ваш город и мы покажем магазины").form-control
+							button(type="submit").btn.btn-white Найти
+							span.reset-search
+				.no-stories
+					.n-stor-title 
+						span.i-warn !
+						span К сожалению в вашем населенном пункте нет розничных магазинов, сотрудничающих с нами!
+					.clear
+					p Но вы можете заказать наш товар через 
+						a(href="#").link-scroll интернет-магазин 
+						| партнеров с доставкой в любую точку!
+
+
+			// /.adress__left
+			.shops__maps
+				#mapStor
+				ul.baloon__list
+			// /.shops__maps
+		
+		.retail__online
+			.h2.center Онлайн магазины
+			p.center Доставка по России и СНГ
+			.online__slider
+				.onlineItem.slider.slider__arrow
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo1.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo1.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo3.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo3.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo1.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo1.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo3.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo3.jpg", alt="#").img-responsive
+					div
+						.online__box
+							a(href="#")
+								img(src="images/shops-logo/logo2.jpg", alt="#").img-responsive
+		// /.retail__online

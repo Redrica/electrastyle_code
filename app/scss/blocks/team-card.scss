@@ -1,0 +1,90 @@
+/* карточка сотрудника для страницы КОНТАКТЫ */
+
+.team-card {
+  width: 100%;
+  text-align: center;
+  background-color: $white;
+  cursor: pointer;
+
+  @include laptop {
+    padding-bottom: 54px;
+  }
+
+  @include desktop-wide {
+    padding-bottom: 69px;
+  }
+
+  &:hover {
+
+    @include laptop {
+      position: relative;
+      margin: -13px -13px -34px;
+      padding: 12px 12px 33px;
+      border: 1px solid $beige;
+      box-sizing: content-box;
+    }
+
+    @include desktop-wide {
+      padding-bottom: 45px;
+    }
+
+    & .team-card__link {
+      display: block;
+    }
+  }
+
+  &__img-box {
+    margin-bottom: 24px;
+
+    @include laptop {
+      margin-bottom: 27px;
+    }
+
+    @include desktop-wide {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    @include text(18px, 24px, 400);
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    @include laptop {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+  }
+
+  &__position {
+    @include text(14px, 18px, 400);
+    margin-bottom: 0;
+    padding: 0 20px;
+
+    @include laptop {
+      padding: 0 25px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__link {
+    @include text(14px, 18px, 400);
+    width: 180px;
+    padding: 7px 10px 9px;
+    margin: 20px auto 0;
+
+    @include tablet-middle {
+      margin-top: 23px;
+    }
+
+    @include laptop {
+      display: none;
+      margin-top: 18px;
+    }
+  }
+}

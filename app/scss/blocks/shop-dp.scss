@@ -1,0 +1,61 @@
+/* попап удаления магазина */
+
+.shop-dp {
+
+  &--closed {
+    display: none;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $white;
+    opacity: 0.75;
+  }
+
+  &__container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 26px);
+    max-width: 476px;
+    padding: 80px 62px 90px;
+    transform: translate(-50%, -50%);
+    border: 1px solid $gray-light;
+    text-align: center;
+    background-color: $white;
+
+    @include desktop-start {
+      padding-top: 60px;
+    }
+
+    @include laptop {
+      max-width: 554px;
+      padding: 60px 125px 90px;
+    }
+  }
+
+  &__text {
+    @include text(18px, 24px ,400);
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+
+    &.btn-white {
+      margin-left: 36px;
+    }
+  }
+
+  &__del {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

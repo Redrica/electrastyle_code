@@ -1,0 +1,437 @@
+include ../mixins/image
+.product__container
+	.product__scroll
+		.container
+			.mob-slider-action
+				.slider-action-box
+					span.prev-mob.prev-btnMob
+					.slides-length
+						span.slides-col.slidesVal 1
+						span /
+						span.slides-all.slidesLength
+					span.next-mob.next-btnMob
+			.product__left.col-md-11.col-sm-10.col-xs-18
+				.visible-xs.mob-title
+					a(href="#").back-modal
+					span Пальто демисезонное
+
+
+				.product__slider-big
+					.product__slider-container
+						.slider.slider-for.slider__arrow
+							div
+								.pr-big-box.zoom
+									.pzItem
+										img(src="images/product/big1.jpg", alt="#").img-responsive.pinch-img
+									a(href="#").pr-zoom
+									a(href="#").pr-favorite
+									.pr-color Серый
+							div
+								.pr-big-box.zoom
+									.pzItem
+										img(src="images/product/big2.jpg", alt="#").img-responsive.pinch-img
+									a(href="#").pr-zoom
+									a(href="#").pr-favorite
+									.pr-color Серый
+							div
+								.pr-big-box.zoom
+									.pzItem
+										img(src="images/product/big3.jpg", alt="#").img-responsive.pinch-img
+									a(href="#").pr-zoom
+									a(href="#").pr-favorite
+									.pr-color Серый
+							div
+								.pr-big-box.zoom
+									.pzItem
+										img(src="images/product/big4.jpg", alt="#").img-responsive.pinch-img
+									a(href="#").pr-zoom
+									a(href="#").pr-favorite
+									.pr-color Серый
+							div
+								.pr-big-box.zoom
+									.pzItem
+										img(src="images/product/big5.jpg", alt="#").img-responsive.pinch-img
+									a(href="#").pr-zoom
+									a(href="#").pr-favorite
+									.pr-color Серый
+							div
+								.pr-big-box.zoom
+									.pzItem
+										img(src="images/product/big6.jpg", alt="#").img-responsive.pinch-img
+									a(href="#").pr-zoom
+									a(href="#").pr-favorite
+									.pr-color Серый
+							div
+								.pr-big-box.zoom
+									.pzItem
+										img(src="images/product/big7.jpg", alt="#").img-responsive.pinch-img
+									a(href="#").pr-zoom
+									a(href="#").pr-favorite
+									.pr-color Серый
+							div
+								.pr-big-box.zoom
+									.pzItem
+										img(src="images/product/big8.jpg", alt="#").img-responsive.pinch-img
+									a(href="#").pr-zoom
+									a(href="#").pr-favorite
+									.pr-color Серый
+
+						a(href="#").pr-zoom.btn-hidden
+						a(href="#").pr-favorite.btn-hidden
+
+					.product__slider-nav.hidden-xs
+						.slider.slider-nav.slider__arrow.sl-nav
+							div
+								.pr-nav-box
+									+img('thumb1.jpg', 'images/product/')
+							div
+								.pr-nav-box
+									+img('thumb2.jpg', 'images/product/')
+							div
+								.pr-nav-box
+									+img('thumb3.jpg', 'images/product/')
+							div
+								.pr-nav-box
+									+img('thumb4.jpg', 'images/product/')
+							div
+								.pr-nav-box
+									+img('thumb5.jpg', 'images/product/')
+							div
+								.pr-nav-box
+									+img('thumb6.jpg', 'images/product/')
+							div
+								.pr-nav-box
+									+img('thumb7.jpg', 'images/product/')
+							div
+								.pr-nav-box
+									+img('thumb8.jpg', 'images/product/')
+					// /.product__slider-nav					
+					.product__information.hidden-xs
+						ul.info-tab
+							li.active.tab1(data-tab="tab1") Описание
+							li.tab2(data-tab="tab2") Вопросы и предложения
+							li.tab3(data-tab="tab3") Отзывы
+						.info-container
+							.accordion__tablet(data-tab="tab1").active.tab1
+								span Описание
+							.info__box.tab1.tab-open
+								.info__box-txt
+									p В то время как снег на улицах уступает место сухому асфальту, девушки торопятся достать из гардеробов пальто всевозможных фасонов и цветов. Сегодня в центре внимания обязательный элемент вашего стиля – пальто-пиджак классической расцветки. Позаимствованный у мужчин, этот предмет гардероба подчеркивает женственность в каждой своей обладательнице. Поэтому бояться прямого кроя и отсутствия отделки не стоит: если ранее вы избегали эту модель пальто, то сейчас самое время ее полюбить. В то время как снег на улицах уступает место сухому асфальту, девушки торопятся достать из гардеробов пальто
+								.clear
+								a(href="#").info__box-more Подробнее
+							//-.tab1
+							.accordion__tablet(data-tab="tab2").tab2
+								span Вопросы и предложения
+							.info__box.tab2
+								.qustion__scroll
+									.scrollBox.q-scrollBox
+										ul.qustion__list.qustion-parent
+											li
+												.q-title Олег Петрович
+												p Куплен на замену 5S, который в целом устраивал. Хотелось камеру получше, т.к. девушка постоянно пользуется соцсетями и активно размещает фото. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна.
+												ul.qustion__list
+													li
+														.q-title Electrastile
+														p Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. 
+											li
+												.q-title Олег (01.01.17)
+												p Куплен на замену 5S, который в целом устраивал. Хотелось камеру получше, т.к. девушка постоянно пользуется соцсетями и активно размещает фото. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна.			
+											li
+												.q-title Олег Ианович (01.01.17)
+												p Куплен на замену 5S, который в целом устраивал. Хотелось камеру получше, т.к. девушка постоянно пользуется соцсетями и активно размещает фото. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна.
+												ul.qustion__list
+													li
+														.q-title Electrastile
+														p Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. 																
+								.qustion__form
+									form(data-toggle="validator", role="form", action="#", method="post")
+										.control__box
+											textarea(type="email", required, rows="8", maxlength="200", data-error="Вы не написали текст отзыва", placeholder="Здесь Вы можете задать ваш вопрос по товару. Ответ на вопросбудет предоставлен в течении трех рабочих дней. Также любые вопросы вы можете задать, воспользовавшись формой связи в разделе “Контакты”").form-control.q-textarea
+											.col-symbol.q-symbol Введено 
+												span 0
+												| /200 символов
+											.help-block.with-errors
+										.control__box
+											button.btn(type="submit") Отправить
+
+							//-.tab2
+							.accordion__tablet(data-tab="tab3").tab3
+								span Отзывы							
+							.info__box.tab3
+								.qustion__scroll
+									.scrollBox.r-scrollBox
+										ul.qustion__list.qustion-parent
+											li
+												.q-title Олег Ианович (01.01.17)
+												p Куплен на замену 5S, который в целом устраивал. Хотелось камеру получше, т.к. девушка постоянно пользуется соцсетями и активно размещает фото. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна.
+												ul.qustion__list
+													li
+														.q-title Electrastile
+														p Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. 
+											li
+												.q-title Олег (01.01.17)
+												p Куплен на замену 5S, который в целом устраивал. Хотелось камеру получше, т.к. девушка постоянно пользуется соцсетями и активно размещает фото. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна.			
+											li
+												.q-title Олег Ианович (01.01.17)
+												p Куплен на замену 5S, который в целом устраивал. Хотелось камеру получше, т.к. девушка постоянно пользуется соцсетями и активно размещает фото. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна.
+												ul.qustion__list
+													li
+														.q-title Electrastile
+														p Все ожидания оправдались, камеры отличные, и фронтальная и основная. Разница в уровне фото с 5S хорошо заметна. 																
+								.qustion__form
+									form(data-toggle="validator", role="form", action="#", method="post")
+										.control__box
+											textarea(type="email", required, rows="8", maxlength="200", data-error="Вы не написали текст вопроса", placeholder="Здесь Вы можете оставить ваш отзыв по товару. Нам важно ваше мнение").form-control.r-textarea
+											.col-symbol.r-symbol Введено 
+												span 0
+												| /200 символов
+											.help-block.with-errors
+										.control__box
+											button.btn(type="submit") Отправить								
+							//-.tab3
+
+						//-.info-container
+					//-.product__information
+
+				// /.product__slider-big
+			// /.product__left
+
+			.product__right.col-md-7.col-sm-8.col-xs-18
+				h1.pr-title.hidden-xs Пальто демисезонное
+				.pr-code Артикул:  3-4448/4-223
+				.pr__block
+					ul.pr-properties.properties-list
+						li
+							span.pr-item Размерный ряд:
+							| 44–52
+						li
+							span.pr-item Материал:
+							|
+							a(href="#modalColor" class="modal-texture") Велюр 128
+						li
+							span.pr-item Состав:
+							| 100% шерсть
+						li
+							span.pr-item Длина по спинке:
+							| Утеплитель
+						li
+							span.pr-item Мех:
+							| Норка
+						li
+							span.pr-item Утеплитель:
+							| Утеплитель
+						li
+							span.pr-item Рост:
+							| 160 см
+						li
+							span.pr-item Длина рукава:
+							| 60см
+						li
+							span.pr-item Силуэт:
+							| Силуэт
+						li
+							span.pr-item Стиль:
+							| Стиль
+					.clear
+					span.show-prop Подробнее
+					.clear
+				.pr__block
+					ul.pr-properties.pr-prices
+						li
+							span.pr-item Цена ( 1 шт ):
+							| 
+							span.price-txt-one 5 000
+								|
+								i.rub ₽
+						li
+							span.pr-item Минимальный заказ ( 5 шт ):
+							|
+							span.price-txt-all 25 000
+								|
+								i.rub ₽
+						li.o-visible
+							span.pr-item
+							| 
+							span.pr-info 1
+								i.i-box
+								| =  5 шт  =  42-50
+							span.pr-tooltip.hidden-tablet
+								span.tooltip-txt ?
+								span.tooltip-info В коробке 5 шт 42-50 размеров
+						li.visible-tablet
+							.tooltip__mob Что это значит?
+							.tooltip-i-mob В коробке 5 шт., размеры: 42, 44, 46, 48,50
+
+				//-.pr__block
+
+				.pr__color
+					.pr-sub-title.pr-select Для оформления заказа выберите цвет
+						i : 
+						span
+					.clear
+					.pr-color-container
+						ul.pr-color-list
+							li
+								.color-box(data-title="227 - Темно-сине-белый", data-min="5", data-price="5000", data-slide="1")
+									.color-block
+										img(src="images/color/color7.png", alt="#").img-responsive
+									.color-tooltip Синий
+							li
+								.color-box(data-title="227 - Темно-серый", data-min="5", data-price="5000", data-slide="2")
+									.color-block
+										img(src="images/color/color8.png", alt="#").img-responsive
+									.color-tooltip Серый
+							li
+								.color-box(data-title="227 - Черный", data-min="5", data-price="5000", data-slide="3")
+									.color-block
+										img(src="images/color/color9.png", alt="#").img-responsive
+									.color-tooltip Черный
+							li
+								.color-box(data-title="227 - Мраморный", data-min="5", data-price="5000", data-slide="4")
+									.color-block
+										img(src="images/color/color10.png", alt="#").img-responsive
+									.color-tooltip Мраморный
+							li
+								.color-box(data-title="227 - Красный", data-min="5", data-price="5000", data-slide="5")
+									.color-block
+										img(src="images/color/color11.png", alt="#").img-responsive
+									.color-tooltip Красный
+							li
+								.color-box(data-title="227 - Коричневый", data-min="5", data-price="5000", data-slide="6")
+									.color-block
+										img(src="images/color/color12.png", alt="#").img-responsive
+									.color-tooltip Коричневый
+							li
+								.color-box(data-title="227 - Мраморный", data-min="5", data-price="5000", data-slide="7")
+									.color-block
+										img(src="images/color/color13.png", alt="#").img-responsive
+									.color-tooltip Мраморный
+							li
+								.color-box(data-title="227 - Темно-серый", data-min="5", data-price="5000", data-slide="8")
+									.color-block
+										img(src="images/color/color14.png", alt="#").img-responsive
+									.color-tooltip Серый
+							li
+								.color-box(data-title="227 - Черный", data-min="5", data-price="5000", data-slide="1")
+									.color-block
+										img(src="images/color/color7.png", alt="#").img-responsive
+									.color-tooltip Черный
+							li
+								.color-box(data-title="227 - Мраморный", data-min="5", data-price="5000", data-slide="2")
+									.color-block
+										img(src="images/color/color8.png", alt="#").img-responsive
+									.color-tooltip Мраморный
+							li
+								.color-box(data-title="227 - Красный", data-min="5", data-price="5000", data-slide="3")
+									.color-block
+										img(src="images/color/color9.png", alt="#").img-responsive
+									.color-tooltip Красный
+					.clear
+				//-.pr__color
+				form(action="#", method="post")
+					.calc__list-title Ваш Заказ:
+					ul.calc__list
+
+					.calc__itog
+						.pr-sub-title Итого:
+						.clear
+						.calc__itog-content
+							.calc__itog-color
+								ul.itog-color-list
+							.calc__itog-info
+								span.itog-value 0									
+								span.piece-txt шт,
+								span.itog-box 0
+								input(type="hidden", name="prPieces", value="0").itog-pieces
+								input(type="hidden", name="prBoxes", value="0").itog-boxes
+								.i-box
+							.calc__itog-price
+								span
+									span.prPrices-txt 0
+									i.rub ₽
+								input(type="hidden", name="prPrices", value="0").itog-prices
+					// /.calc__itog
+
+					.calc__action
+						a(href="#modalBasket").btn.add-basket.modal-open Добавить в корзину
+						a(href="#").btn.add-favorite
+							i.i-favorite
+							span В избранное
+
+					.pr-share
+						.pr-sub-title Расскажи друзьям:
+						ul.pr-soc
+							li
+								a(href="#").shop-soc-inst
+							li
+								a(href="#").shop-soc-vk
+							li
+								a(href="#").shop-soc-fb
+							li
+								a(href="#").shop-soc-yt
+			// /.product__right
+	.prClose
+// /.product__container
+.clear
+.accordion__mob.visible-xs
+	.accordion__box.active.a-box1
+		.accordion__tab
+			span Описание
+		.accordion__content.accordionShow
+	//-.accordion__box
+	
+	.accordion__box.a-box2
+		.accordion__tab
+			span Вопросы и предложения
+		.accordion__content
+			.qustion__scroll
+				.scrollBox.q-scrollBox2
+					ul.qustion__list
+			.qustion__form
+				form(data-toggle="validator", role="form", action="#", method="post")
+					.control__box
+						textarea(type="email", required, rows="8", maxlength="200", data-error="Вы не написали текст отзыва", placeholder="Здесь Вы можете задать ваш вопрос по товару. Ответ на вопросбудет предоставлен в течении трех рабочих дней. Также любые вопросы вы можете задать, воспользовавшись формой связи в разделе “Контакты”").form-control.q-textarea
+						.col-symbol.q-symbol Введено 
+							span 0
+							| /200 символов
+						.help-block.with-errors
+					.control__box
+						button.btn(type="submit") Отправить
+	//-.accordion__box
+	
+	.accordion__box.a-box3
+		.accordion__tab
+			span Отзывы
+		.accordion__content
+			.qustion__scroll
+				.scrollBox.r-scrollBox2
+					ul.qustion__list.qustion-parent
+			.qustion__form
+				form(data-toggle="validator", role="form", action="#", method="post")
+					.control__box
+						textarea(type="email", required, rows="8", maxlength="200", data-error="Вы не написали текст вопроса", placeholder="Здесь Вы можете оставить ваш отзыв по товару. Нам важно ваше мнение").form-control.r-textarea
+						.col-symbol.r-symbol Введено 
+							span 0
+							| /200 символов
+						.help-block.with-errors
+					.control__box
+						button.btn(type="submit") Отправить
+	//-.accordion__box
+
+// /.accordion__mob
+.clear
+.prouct__triger
+	.container
+		.triger__container.trigerItems
+			.triger__box
+				div
+					img(src="images/svg/mos.svg", alt="#", width="24", height="44").tr1
+					span Российская компания производитель
+			.triger__box
+				div
+					img(src="images/svg/sew.svg", alt="#", width="39", height="39").tr2
+					span Собственное производство
+			.triger__box
+				div
+					img(src="images/svg/eac.svg", alt="#", width="40", height="38").tr3
+					span Сертифицированный товар

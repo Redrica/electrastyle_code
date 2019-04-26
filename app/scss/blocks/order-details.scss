@@ -1,0 +1,118 @@
+/* страница ИСТОРИЯ ЗАКАЗОВ, стили для информации о заказе */
+
+.order-details {
+  clear: both;
+
+  @include tablet {
+    display: flex;
+    padding-left: 34px;
+  }
+
+  @media (min-width: 1800px) {
+    padding-left: 0;
+  }
+
+  & .photo-change {
+
+    @include  tablet {
+      display: block;
+      width: auto;
+      height: auto;
+      margin-left: 21px;
+      margin-bottom: 0;
+      text-indent: 0;
+      background: none;
+    }
+  }
+
+  &__color {
+    position: relative;
+    min-height: 38px;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      width: 268px;
+    }
+
+    @media (min-width: 1800px) {
+      width: 234px;
+    }
+
+    & a {
+      float: right;
+      padding-left: 115px;
+
+      @include tablet {
+        float: none;
+        margin-bottom: 13px;
+        padding-left: 0;
+        line-height: 24px;
+      }
+    }
+
+    & .c-item-img {
+      top: -9px;
+      left: 4px;
+
+      @include tablet {
+        position: static;
+        width: auto;
+      }
+
+      & img {
+        width: 38px;
+      }
+    }
+  }
+
+  &__quantity {
+
+    @include tablet {
+      width: 156px;
+    }
+
+    &.calc-item-box {
+      margin: 18px 17px 0 7px;
+
+      @include tablet {
+        margin: 0;
+      }
+    }
+
+    & p {
+      margin-bottom: 14px;
+
+      @include tablet {
+        line-height: 24px;
+      }
+    }
+
+    & span {
+      margin-right: 3px;
+      font-size: 18px;
+
+      &:nth-child(2) {
+        margin-right: 8px;
+        font-size: 14px;
+      }
+    }
+
+    & .i-box {
+      margin-left: 4px;
+    }
+  }
+
+  &__price {
+    float: right;
+    margin-top: 54px;
+    margin-right: 19px;
+    font-size: 24px;
+    line-height: 24px;
+
+    @include tablet {
+      float: none;
+      margin: 38px 0 0;
+    }
+  }
+}

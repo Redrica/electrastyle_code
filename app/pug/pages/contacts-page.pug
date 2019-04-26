@@ -1,0 +1,96 @@
+include ../mixins/team-card
+
+.catalog__content
+	.title.hidden-xs.no-float
+		.title-box
+			.h1.contacts-title Контактная информация
+	section.contacts
+		.container
+			//- address block
+			.contacts__address
+				.contacts__tabs.tabs
+					a.tabs__tab.contacts__tab.btn.tabs__tab--active(href='') Офис и шоурум
+					a.tabs__tab.contacts__tab.btn.btn-white(href='') Склад
+
+				.contacts__content.contacts__content--office
+					.contacts__content-wrapper
+						.contacts__info
+							a.contacts__info-item.contacts__info-item--address(href='#') 117585, Москва, Варшавское шоссе д.125, строение 1, секция 7, НИИ «АРГОН», офис 7412
+							a.contacts__info-item.contacts__info-item--phone(href='tel:+74953112354') +7 495 311-23-54
+							a.contacts__info-item.contacts__info-item--fax(href='tel:+74953112354') +7 495 748-17-11 (факс)
+							a.contacts__info-item.contacts__info-item--email(href='mailto:info@electrastyle.ru') info@electrastyle.ru
+							p.contacts__info-item.contacts__info-item--time пн–чт 9:30–18:00/ пт 9:30–17:00
+						.contacts__map-block
+
+						.contacts__how-to.how-to
+							p.how-to__title Как добраться
+							.how-to__item
+								a.how-to__link-slide(href='#') Станция Южная
+								p.how-to__text.how-to__text--large.to-slide Как к нам добраться от метро «Южная»?
+								p.how-to__text.how-to__text--large.how-to__text--icon-walk.to-slide Пешком (быстрее всего).
+								a.how-to__video-link.to-slide(href='#') Смотреть видео
+								p.how-to__text.to-slide Выход из станции «Южная» 7 или 8. Вы можете дойти пешком, это займет 10-15 минут. Выйдя из 7 выхода, сверните направо. Идите по улице Сумской до светофора на пересечении улицы Сумской и Варшавского шоссе. Справа от Вас будет McDonald’s. Не переходя дорогу, сверните налево (спиной к McDonald’s) и идите прямо. Сразу за магазином «Перекресток» увидите подземный переход. Перейдите дорогу. Перед Вами длинное 6-этажное здание. Подойдите к нему. По правую руку Вы увидите белую входную группу с вывеской НИИ «Аргон». Вы на месте!
+								p.how-to__text.how-to__text--large.how-to__text--icon-bus.to-slide На автобусе
+								p.how-to__text.to-slide Также от метро к нам можно добраться на автобусах №218 и №225. Сразу возле выхода 8 станции «Южная» расположена автобусная остановка. Садитесь на любой из вышеуказанных рейсов и едете до остановки «Управление социальной защиты». Переходите дорогу (дублер Варшавского шоссе) на светофоре и дальше двигаетесь прямо к 6-этажному длинному зданию, которое перед Вами. По правую руку Вы увидите белую входную группу с вывеской НИИ «Аргон». Вы на месте!
+
+						.contacts__how-to.how-to
+							.how-to__item
+								a.how-to__link-slide(href='#') Станция Варшавская
+								p.how-to__text.how-to__text--large.to-slide Как к нам добраться от метро «Варшавская»?
+								p.how-to__text.to-slide Рекомендуем добираться на автобусе или троллейбусе. Из станции метро «Варшавская» выход 1 пройдите до светофора н пересечении Чонгарского бульвара и Варшавского шоссе. Справа Вы увидите остановку, на которой можете сесть на троллейбус №40, или автобусы №225, №241, №683 на выбор. На любой из вышеуказанных рейсов едете до остановки «Управление социальной защиты». Переходите дорогу по подземному переходу (Варшавского шоссе) и дальше двигаетесь прямо к 6-этажному длинному зданию, которое перед Вами. По правую руку Вы увидите белую входную группу с вывеской НИИ «Аргон». Вы на месте!
+					.contacts__map
+						a.contacts__link-dealers(href='#') Дилеры в регионах
+						.contacts__map-container(id='map-office')
+
+				.contacts__content.contacts__content--storage.hidden
+					.contacts__content-wrapper
+						.contacts__info
+							a.contacts__info-item.contacts__info-item--address(href='#') Московская область, г. Подольск, ул. Комсомольская, д.1, Завод им. Калинина, Ворота №6, cклад ООО «АРТ ДИЗАЙН»
+							a.contacts__info-item.contacts__info-item--phone(href='tel:+79060463901') +7 906 046-39-01
+							p.contacts__info-item Булыгин Виктор Васильевич, заведующий складом
+							p.contacts__info-item.contacts__info-item--time пн–чт 9:30–18:00/ пт 9:30–17:00
+						.contacts__map-block
+						.contacts__how-to
+							a.contacts__link.btn.btn-white(href='') Посмотреть схему проезда
+					.contacts__map
+						a.contacts__link-dealers(href='#') Дилеры в регионах
+						.contacts__map-container(id='map-storage')
+			//- address block end
+
+			//-	sliders block
+			.contacts__team
+				.contacts__title-box
+					h2.contacts__title.main-title Наша команда
+				ul.contacts__team-list.contacts__team-list--team
+					li.contacts__team-item
+						+team-card('images/', 'contacts_employee.jpg', 'Ирина', 'Туркина', 'Менеджер отдела оптовых продаж', 'Написать менеджеру')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_employee.jpg', 'Светлана', 'Литвинова', 'Менеджер отдела оптовых продаж', 'Написать менеджеру')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_employee.jpg', 'Михаил', 'Малиевский', 'Менеджер отдела оптовых продаж', 'Написать менеджеру')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_employee.jpg', 'Виталий', 'Черепов', 'Менеджер отдела оптовых продаж', 'Написать менеджеру')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_employee.jpg', 'Ирина', 'Туркина', 'Менеджер отдела оптовых продаж', 'Написать менеджеру')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_employee.jpg', 'Светлана', 'Литвинова', 'Менеджер отдела оптовых продаж', 'Написать менеджеру')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_employee.jpg', 'Михаил', 'Малиевский', 'Менеджер отдела оптовых продаж', 'Написать менеджеру')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_employee.jpg', 'Виталий', 'Черепов', 'Менеджер отдела оптовых продаж', 'Написать менеджеру')
+				.contacts__request
+					p.contacts__request-text Не знаете, кто ваш менеджер?
+					a.contacts__request-link.btn.btn-white(href="#") Узнать
+
+			.contacts__team
+				.contacts__title-box
+					h2.contacts__title.main-title Руководство
+				ul.contacts__team-list.contacts__team-list--leaders
+					li.contacts__team-item
+						+team-card('images/', 'contacts_leader.jpg', 'Ирина', 'Туркина', 'Руководитель отдела развития', 'Написать')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_leader.jpg', 'Светлана', 'Литвинова', 'Руководитель отдела развития', 'Написать')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_leader.jpg', 'Михаил', 'Малиевский', 'Руководитель отдела развития', 'Написать')
+					li.contacts__team-item
+						+team-card('images/', 'contacts_leader.jpg', 'Виталий', 'Черепов', 'Руководитель отдела развития', 'Написать')

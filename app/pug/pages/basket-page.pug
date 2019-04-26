@@ -1,0 +1,349 @@
+include ../mixins/image
+.catalog__content
+	.title.hidden-xs
+		.title-box
+			.h1 Корзина товаров
+	.basket__container
+		form(action="#", method="post")
+			.basket__content
+				.container
+					.basket__box
+						.basket__img
+							a(href="#")
+								img(src="images/basket-img.jpg", alt="#").img-responsive
+						.basket__info
+							h1.pr-title
+								a(href="#") Пальто демисезонное
+							.basket__info-content
+								.basket__text
+									.pr-code Артикул:  3-4448/4-223
+									.basket-accordion
+										.pr__block.b-pr-block.b-pr-first
+											ul.pr-properties.properties-list.basket-pr-list
+												li
+													.prop-item
+														span.pr-item Размерный ряд:
+														| 44–52
+												li
+													.prop-item
+														span.pr-item Материал:
+														|
+														a(href="#modalColor" class="modal-texture") Велюр 128
+												li
+													.prop-item
+														span.pr-item Состав:
+														| 100% шерсть
+												li
+													.prop-item
+														span.pr-item Мех:
+														| Норка
+												li
+													.prop-item
+														span.pr-item Утеплитель:
+														| Утеплитель
+											.clear
+										.pr__block.b-pr-block
+											ul.pr-properties.pr-prices
+												li
+													.prop-item
+														span.pr-item Цена ( 1 шт ):
+														| 
+														span.price-txt-one 5 000
+															|
+															i.rub ₽
+												li
+													.prop-item
+														span.pr-item.hidden-sm Минимальный заказ ( 5 шт ):
+														span.pr-item.visible-sm Мин. заказ ( 5 шт ):
+														|
+														span.price-txt-one 25 000
+															|
+															i.rub ₽
+												li.o-visible
+													.prop-item
+														span.pr-info 1
+															i.i-box
+															| =  5 шт  =  42-50
+														span.pr-tooltip.hidden-xs
+															span.tooltip-txt ?
+															span.tooltip-info В коробке 5 шт 42-50 размеров
+									.b-accordion-action
+										span.b-accordion-btn Подробнее
+									//-.pr__block
+								.basket__action
+									ul.calc__list
+										li.calc-item.calc-basket-item#item975642
+											.calc-item-top
+												.pr-sub-title
+													a(href="#") 227 - Темно-сине-белый
+												.pr-sub-title Укажите кол-во
+											.calc-item-content
+												.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/basket-img-blue.jpg") Показать фото
+													input(name="colorPr[]/" value="227 - Темно-сине-белый" type="hidden")
+												.c-item-col
+													span.btn-minus.btn-calc.btn-basket-minus
+													input(autocomplete="off", data-step="5", data-min="5", value="5", data-discount="5000",  data-price="5000", type="text").calc-val.calc-basket-val
+													span.btn-plus.btn-calc.btn-basket-plus
+													span.calc-item-box.calc-basket-item-box
+														span 1
+														.i-box
+												.c-item-price.c-basket-item-price
+													.basket-item-old-price
+														span 25 000
+														i.rub ₽
+													.basket-pr-price
+														span 20 000
+														i.rub ₽
+													.basket-discount
+														.b-discount-text Ваша скидка
+															.b-discount-sum
+																span 5000
+																i.rub ₽
+														.b-discount-help
+															.b-help-btn ?
+															.b-help-modal Детализация скидок 
+																|
+																br
+																| Скидка на объем 5000 
+																|
+																i.rub ₽
+																br
+																| В ПРОМОКОД 500 
+																i.rub ₽ 
+																span.b-help-close
+												.c-item-action
+													span.pr-del(data-item="item975642").pr-del-basket
+										li.calc-item.calc-basket-item#item972642
+											.calc-item-top
+												.pr-sub-title
+													a(href="#") 227 - Темно-сине-белый
+												.pr-sub-title Укажите кол-во
+											.calc-item-content
+												.c-item-img
+													img(src="images/color/color5.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/basket-img-red.jpg") Показать фото
+													input(name="colorPr[]/" value="227 - Темно-сине-белый" type="hidden")
+												.c-item-col
+													span.btn-minus.btn-calc.btn-basket-minus
+													input(autocomplete="off", data-step="5", data-min="5", value="5", data-discount="5000",  data-price="5000", type="text").calc-val.calc-basket-val
+													span.btn-plus.btn-calc.btn-basket-plus
+													span.calc-item-box.calc-basket-item-box
+														span 1
+														.i-box
+												.c-item-price.c-basket-item-price
+													.basket-item-old-price
+														span 25 000
+														i.rub ₽
+													.basket-pr-price
+														span 20 000
+														i.rub ₽
+													.basket-discount
+														.b-discount-text Ваша скидка
+															.b-discount-sum
+																span 5000
+																i.rub ₽
+														.b-discount-help
+															.b-help-btn ?
+															.b-help-modal Детализация скидок 
+																|
+																br
+																| Скидка на объем 5000 
+																|
+																i.rub ₽
+																br
+																| В ПРОМОКОД 500 
+																i.rub ₽ 
+																span.b-help-close
+												.c-item-action
+													span.pr-del(data-item="item972642").pr-del-basket
+										li.calc-item.calc-basket-item#item972643
+											.calc-item-top
+												.pr-sub-title
+													a(href="#") 227 - Темно-сине-белый
+												.pr-sub-title Укажите кол-во
+											.calc-item-content
+												.c-item-img
+													img(src="images/color/color3.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/basket-img-black.jpg") Показать фото
+													input(name="colorPr[]/" value="227 - Темно-сине-белый" type="hidden")
+												.c-item-col
+													span.btn-minus.btn-calc.btn-basket-minus
+													input(autocomplete="off", data-step="5", data-min="5", value="5", data-discount="5000",  data-price="5000", type="text").calc-val.calc-basket-val
+													span.btn-plus.btn-calc.btn-basket-plus
+													span.calc-item-box.calc-basket-item-box
+														span 1
+														.i-box
+												.c-item-price.c-basket-item-price
+													.basket-item-old-price
+														span 25 000
+														i.rub ₽
+													.basket-pr-price
+														span 20 000
+														i.rub ₽
+													.basket-discount
+														.b-discount-text Ваша скидка
+															.b-discount-sum
+																span 5000
+																i.rub ₽
+														.b-discount-help
+															.b-help-btn ?
+															.b-help-modal Детализация скидок 
+																|
+																br
+																| Скидка на объем 5000 
+																|
+																i.rub ₽
+																br
+																| В ПРОМОКОД 500 
+																i.rub ₽ 
+																span.b-help-close
+												.c-item-action
+													span.pr-del(data-item="item972643").pr-del-basket
+
+
+			.basket__content
+				.container
+					.basket__box
+						.basket__img
+							a(href="#")
+								img(src="images/basket-img.jpg", alt="#").img-responsive
+						.basket__info
+							h1.pr-title
+								a(href="#") Пальто демисезонное
+							.basket__info-content
+								.basket__text
+									.pr-code Артикул:  3-4448/4-223
+									.basket-accordion
+										.pr__block.b-pr-block.b-pr-first
+											ul.pr-properties.properties-list.basket-pr-list
+												li
+													.prop-item
+														span.pr-item Размерный ряд:
+														| 44–52
+												li
+													.prop-item
+														span.pr-item Материал:
+														|
+														a(href="#modalColor" class="modal-texture") Велюр 128
+												li
+													.prop-item
+														span.pr-item Состав:
+														| 100% шерсть
+												li
+													.prop-item
+														span.pr-item Мех:
+														| Норка
+												li
+													.prop-item
+														span.pr-item Утеплитель:
+														| Утеплитель
+											.clear
+										.pr__block.b-pr-block
+											ul.pr-properties.pr-prices
+												li
+													.prop-item
+														span.pr-item Цена ( 1 шт ):
+														| 
+														span.price-txt-one 5 000
+															|
+															i.rub ₽
+												li
+													.prop-item
+														span.pr-item.hidden-sm Минимальный заказ ( 5 шт ):
+														span.pr-item.visible-sm Мин. заказ ( 5 шт ):
+														|
+														span.price-txt-one 25 000
+															|
+															i.rub ₽
+												li
+													.prop-item
+														span.pr-info 1
+															i.i-box
+															| =  5 шт  =  42-50
+														span.pr-tooltip.hidden-xs
+															span.tooltip-txt ?
+															span.tooltip-info В коробке 5 шт 42-50 размеров
+									.b-accordion-action
+										span.b-accordion-btn Подробнее
+									//-.pr__block
+								.basket__action
+									ul.calc__list
+										li.calc-item.calc-basket-item#item975682
+											.calc-item-top
+												.pr-sub-title
+													a(href="#") 227 - Темно-сине-белый
+												.pr-sub-title Укажите кол-во
+											.calc-item-content
+												.c-item-img
+													img(src="images/color/color1.png", alt="#").img-responsive
+													a.photo-change(href="#", data-img="images/basket-img-blue.jpg") Показать фото
+													input(name="colorPr[]/" value="227 - Темно-сине-белый" type="hidden")
+												.c-item-col
+													span.btn-minus.btn-calc.btn-basket-minus
+													input(autocomplete="off", data-step="5", data-min="5", value="5", data-discount="0",  data-price="5000", type="text").calc-val.calc-basket-val
+													span.btn-plus.btn-calc.btn-basket-plus
+													span.calc-item-box.calc-basket-item-box
+														span 1
+														.i-box
+												.c-item-price.c-basket-item-price
+													.basket-pr-price
+														span 25 000
+														i.rub ₽
+												.c-item-action
+													span.pr-del(data-item="item975682").pr-del-basket
+			.basket__promo
+				.basket__promo-content
+					.container
+						.promo-form
+							input(type="text").promo-control
+							button(type="submit").promo-btn Применить промокод
+			.basket__bottom
+				.container
+					.basket__bottom-action
+						.b-itog-title Итого:
+						.b-itog-box
+							.calc__itog-info
+								span.itog-value 20
+								span.piece-txt шт,
+								span.itog-box 4
+								input(type="hidden", name="prPieces", value="20").itog-pieces
+								input(type="hidden", name="prBoxes", value="4").itog-boxes
+								.i-box
+							.calc__itog-price
+								span
+									span.prPrices-txt 100 000
+									i.rub ₽
+								input.itog-prices(name="prPrices", value="25 000", type="hidden")
+						.b-itog-discount Вы экономите 
+							span 7 000 
+							i.rub ₽
+						.b-itog-discount-text Внимание! Для получения объемной скидки
+							br
+							| Вам необходимо выбрать еще 4 товара
+						.b-itog-btn
+							button(type="submit", data-modal="#modalBasketSaccess").btn.btn-basket
+								span.icon-basket
+								| Оформить заказ
+					.basket__bottom-info
+						.b-list-title Оформив заказ 
+							|
+							br
+							| Вы бесплатно получаете:
+						ul.basket-list
+							li
+								a(href="#")
+									span.b-icon
+										img(src="images/svg/basket-icon-1.svg", alt="#", width="36", height="34")
+									span.b-list-txt Рекламные материалы
+							li
+								a(href="#")
+									span.b-icon
+										img(src="images/svg/basket-icon-2.svg", alt="#", width="36", height="26")
+									span.b-list-txt Фото для соц сетей 
+										| 
+										br
+										| и интернет-магазинов
+			.basket-line
+	//.basket__container

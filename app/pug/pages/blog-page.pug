@@ -1,0 +1,18 @@
+section.blog-page
+	.title.hidden-xs
+		.title-box
+			.h1.main-title Блог
+	.container
+		include ../modules/blog-page/blog-page-slider
+		ul.blog-page__content
+			li.blog-page__item.blog-page__item--left
+				include ../modules/blog-page/blog-card-small
+				include ../modules/blog-page/blog-card-small
+			li.blog-page__item.blog-page__item--right
+				include ../modules/blog-page/blog-card-large
+			li.blog-page__item.blog-page__item--right
+				include ../modules/blog-page/blog-card-small
+				include ../modules/blog-page/blog-card-small
+			li.blog-page__item.blog-page__item--left
+				include ../modules/blog-page/blog-card-large
+

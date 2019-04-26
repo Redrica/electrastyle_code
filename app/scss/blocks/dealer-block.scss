@@ -1,0 +1,36 @@
+/* Страница ДИЛЕРЫ, блок информации о дилере  */
+
+.dealer-block {
+  @include text(14px, 27px, 400);
+  color: $gray-main;
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  &__text {
+    font: inherit;
+    margin: 0;
+
+    & span {
+      margin: 0 3px;
+    }
+
+    & a {
+      color: $gray-main;
+    }
+  }
+
+  &__link {
+
+    &:hover {
+      text-decoration: none;
+      color: $beige;
+    }
+  }
+
+  &__map-link {
+    color: $beige;
+  }
+}

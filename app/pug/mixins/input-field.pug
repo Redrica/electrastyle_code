@@ -1,0 +1,9 @@
+mixin input-field(divClassString, inputClass, idString, typeString, nameString, placeholder, labelClass, ariaLabel, labelText)
+	.input-field(class=divClassString)
+		input.input-field__input(class=inputClass, id=idString type=typeString name=nameString placeholder=placeholder)
+		label.input-field__label(class=labelClass, for=idString, aria-label=ariaLabel)= labelText
+
+
+//- класс обертки, класс инпута, id,
+//- тип поля, имя поля, плейсхолдер,
+//- класс для label, aria-label, текст подписи

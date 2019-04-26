@@ -1,0 +1,167 @@
+include ../mixins/image
+.backstage__container.hidden-tablet
+	.container
+		ul.backstage__tabs
+			li.tab1.active(data-tab="tab1") BACKSTAGES
+			li.tab2(data-tab="tab2") stories
+			li.tab3(data-tab="tab3") Выставки
+			li.tab4(data-tab="tab4") О компании
+		//-backstage__tabs
+		.backstage__content
+			.backstage__tab.tabActive.tab1
+				.backstage__box
+					.backstage__slider.col-md-13.col-sm-13
+						.backstageItem1.slider
+							div(data-slidetitle="Backstage Весна 2017", data-title="Весна 2017", data-link="test.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="J2Se9P70Gv4").video-link
+										+img('backstage.jpg', 'images/')
+							div(data-slidetitle="Backstage Лето 2017", data-title="Лето 2017", data-link="test1.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="J2Se9P70Gv4").video-link
+										+img('backstage2.jpg', 'images/')
+							div(data-slidetitle="Backstage Осень 2017", data-title="Осень 2017", data-link="test2.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="6m0mmM-n_FM").video-link
+										+img('backstage3.jpg', 'images/')
+					//-.backstage__slider
+					
+					.backstage__action.col-md-5.col-sm-5
+						.b-action-box
+							.b-arrow-box
+								span.prev-text.b-arrow-text
+								.b-action-arrow.b-arrow-prev.b-prev1
+							.b-action-content
+								.b-action-txt
+									.b-action-title Весна 2017
+									.clear
+									a(href="#").b-action-link.btn Перейти в каталог
+							.b-arrow-box
+								span.next-text.b-arrow-text
+								.b-action-arrow.b-arrow-next.b-next1
+					//-backstage__action
+				//-.backstage__box
+
+			//-.backstage__tab
+			.backstage__tab.tab2
+				.backstage__box
+					.backstage__slider.col-md-13.col-sm-13
+						.backstageItem2.slider
+							div(data-slidetitle="stories 2017", data-title="stories 2017", data-link="test.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="J2Se9P70Gv4").video-link
+										+img('backstage2.jpg', 'images/')
+							div(data-slidetitle="stories 2018", data-title="stories 2018", data-link="test1.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="J2Se9P70Gv4").video-link
+										+img('backstage3.jpg', 'images/')
+							div(data-slidetitle="stories 2019", data-title="stories 2019", data-link="test2.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="6m0mmM-n_FM").video-link
+										+img('backstage.jpg', 'images/')
+					//-.backstage__slider
+					
+					.backstage__action.col-md-5.col-sm-5
+						.b-action-box
+							.b-arrow-box
+								span.prev-text.b-arrow-text
+								.b-action-arrow.b-arrow-prev.b-prev2
+							.b-action-content
+								.b-action-txt
+									.b-action-title stories 2017
+									.clear
+									a(href="#").b-action-link.btn Перейти в каталог
+							.b-arrow-box
+								span.next-text.b-arrow-text
+								.b-action-arrow.b-arrow-next.b-next2
+					//-backstage__action
+				//-.backstage__box
+
+			//-.backstage__tab
+			.backstage__tab.tab3
+				.backstage__box
+					.backstage__slider.col-md-13.col-sm-13
+						.backstageItem3.slider
+							div(data-slidetitle="Выставки 2017", data-title="Выставки 2017", data-link="test.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="J2Se9P70Gv4").video-link
+										+img('backstage2.jpg', 'images/')
+							div(data-slidetitle="Выставки 2018", data-title="Выставки 2018", data-link="test1.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="J2Se9P70Gv4").video-link
+										+img('backstage3.jpg', 'images/')
+							div(data-slidetitle="Выставки 2019", data-title="Выставки 2019", data-link="test2.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="6m0mmM-n_FM").video-link
+										+img('backstage.jpg', 'images/')
+					//-.backstage__slider
+					
+					.backstage__action.col-md-5.col-sm-5
+						.b-action-box
+							.b-arrow-box
+								span.prev-text.b-arrow-text
+								.b-action-arrow.b-arrow-prev.b-prev3
+							.b-action-content
+								.b-action-txt
+									.b-action-title Выставки 2017
+									.clear
+									a(href="#").b-action-link.btn Перейти в каталог
+							.b-arrow-box
+								span.next-text.b-arrow-text
+								.b-action-arrow.b-arrow-next.b-next3
+					//-backstage__action
+				//-.backstage__box
+
+			//-.backstage__tab
+
+			.backstage__tab.tab4
+				.backstage__box
+					.backstage__slider.col-md-13.col-sm-13
+						.backstageItem4.slider
+							div(data-slidetitle="О компании 2017", data-title="О компании 2017", data-link="test.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="J2Se9P70Gv4").video-link
+										+img('backstage.jpg', 'images/')
+							div(data-slidetitle="О компании 2018", data-title="О компании 2018", data-link="test1.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="J2Se9P70Gv4").video-link
+										+img('backstage2.jpg', 'images/')
+							div(data-slidetitle="О компании 2019", data-title="О компании 2019", data-link="test2.html").video-slide
+								.backstage__video
+									.backstage-hover
+									a(href="#", data-videoId="6m0mmM-n_FM").video-link
+										+img('backstage3.jpg', 'images/')
+					//-.backstage__slider
+					
+					.backstage__action.col-md-5.col-sm-5
+						.b-action-box
+							.b-arrow-box
+								span.prev-text.b-arrow-text
+								.b-action-arrow.b-arrow-prev.b-prev4
+							.b-action-content
+								.b-action-txt
+									.b-action-title О компании 2017
+									.clear
+									a(href="#").b-action-link.btn Перейти в каталог
+							.b-arrow-box
+								span.next-text.b-arrow-text
+								.b-action-arrow.b-arrow-next.b-next4
+					//-backstage__action
+				//-.backstage__box
+
+			//-.backstage__tab
+
+		// /.backstage__content
+	//-.container
+//.backstage__container

@@ -1,0 +1,29 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body
+		include modules/header
+
+		section.wrapper
+			.breadcrumb__container.hidden-xs
+				.container
+					ul.breadcrumb
+						li
+							a(href="#") Главная
+						li Избранное
+			//-.breadcrumb__container
+			.catalog__container
+				.visible-xs.mob-title
+					a(href="#").back-modal
+					span Избранное				
+				include pages/favorite-page
+			// .innter__container
+		// /.wrapper
+
+		include modules/footer-child
+		include modules/modal
+		include includes/foot
+
+

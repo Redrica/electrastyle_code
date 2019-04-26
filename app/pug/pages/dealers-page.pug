@@ -1,0 +1,141 @@
+include ../mixins/select
+
+.catalog__content
+	.title.hidden-xs.no-float
+		.title-box
+			.h1.contacts-title Дилеры
+	section.dealers
+		.container.dealers__container
+			.dealers__selection
+				form.dealers__form
+					.input-field.dealers__input
+						select.input-field__input(id='country-select' name='country-select')
+							option(value='Все страны') Все страны
+							option(value='Россия') Россия
+
+				.dealers__scroll
+					.dealers__data.scrollBox
+						.dealers__content.dealers__content--all
+							.dealers__country
+								p.dealers__country-name
+									span Россия
+								ul.dealers__list
+									li.dealers__item.dealer-block
+										p.dealer-block__title Новосибирск
+										p.dealer-block__text г. Новосибирск, ул. Гоголя,  д.204-А, офис 202
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 383 311-01-15
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 913 985-25-05
+										a(href='#').dealer-block__map-link Посмотреть на карте
+
+									li.dealers__item.dealer-block
+										p.dealer-block__title Санкт-Петербург
+										p.dealer-block__text Санкт-Петербург, ул. Заставская, д. 33 (метро Московские ворота)
+										p.dealer-block__text пн-пт с 9.00 до 17.00
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 812 677-56-03
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 911 946-04-90
+										p.dealer-block__text
+											a(href='mailto:alnair.spb@gmail.com') alnair.spb@gmail.com
+										a(href='#').dealer-block__map-link Посмотреть на карте
+
+									li.dealers__item.dealer-block
+										p.dealer-block__title Новосибирск
+										p.dealer-block__text г. Новосибирск, ул. Гоголя,  д.204-А, офис 202
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 383 311-01-15
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 913 985-25-05
+										a(href='#').dealer-block__map-link Посмотреть на карте
+
+							.dealers__country
+								p.dealers__country-name
+									span Страна
+								ul.dealers__list
+									li.dealers__item.dealer-block
+										p.dealer-block__title Новосибирск
+										p.dealer-block__text г. Новосибирск, ул. Гоголя,  д.204-А, офис 202
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 383 311-01-15
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 913 985-25-05
+										a(href='#').dealer-block__map-link Посмотреть на карте
+
+									li.dealers__item.dealer-block
+										p.dealer-block__title Санкт-Петербург
+										p.dealer-block__text Санкт-Петербург, ул. Заставская, д. 33 (метро Московские ворота)
+										p.dealer-block__text пн-пт с 9.00 до 17.00
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 812 677-56-03
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 911 946-04-90
+										p.dealer-block__text
+											a(href='mailto:alnair.spb@gmail.com') alnair.spb@gmail.com
+										a(href='#').dealer-block__map-link Посмотреть на карте
+
+									li.dealers__item.dealer-block
+										p.dealer-block__title Новосибирск
+										p.dealer-block__text г. Новосибирск, ул. Гоголя,  д.204-А, офис 202
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 383 311-01-15
+										p.dealer-block__text
+											a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+											span /
+											a(href='tel:+73832080633').dealer-block__link +7 913 985-25-05
+										a(href='#').dealer-block__map-link Посмотреть на карте
+
+						.dealers__content.dealers__content--country.hidden
+							ul.dealers__list
+								li.dealers__item.dealer-block
+									p.dealer-block__title Новосибирск
+									p.dealer-block__text г. Новосибирск, ул. Гоголя,  д.204-А, офис 202
+									p.dealer-block__text
+										a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+										span /
+										a(href='tel:+73832080633').dealer-block__link +7 383 311-01-15
+									p.dealer-block__text
+										a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+										span /
+										a(href='tel:+73832080633').dealer-block__link +7 913 985-25-05
+									a(href='#').dealer-block__map-link Посмотреть на карте
+
+								li.dealers__item.dealer-block
+									p.dealer-block__title Санкт-Петербург
+									p.dealer-block__text Санкт-Петербург, ул. Заставская, д. 33 (метро Московские ворота)
+									p.dealer-block__text пн-пт с 9.00 до 17.00
+									p.dealer-block__text
+										a(href='tel:+73832080633').dealer-block__link +7 812 677-56-03
+										span /
+										a(href='tel:+73832080633').dealer-block__link +7 911 946-04-90
+									a(href='#').dealer-block__map-link Посмотреть на карте
+
+								li.dealers__item.dealer-block
+									p.dealer-block__title Новосибирск
+									p.dealer-block__text г. Новосибирск, ул. Гоголя,  д.204-А, офис 202
+									p.dealer-block__text
+										a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+										span /
+										a(href='tel:+73832080633').dealer-block__link +7 383 311-01-15
+									p.dealer-block__text
+										a(href='tel:+73832080633').dealer-block__link +7 383 208-06-33
+										span /
+										a(href='tel:+73832080633').dealer-block__link +7 913 985-25-05
+									a(href='#').dealer-block__map-link Посмотреть на карте
+
+			.dealers__map(id='map-dealers')

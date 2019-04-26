@@ -1,0 +1,506 @@
+/* страница ИСТОРИЯ ЗАКАЗОВ, стили для карточки заказа */
+
+.order {
+  position: relative;
+  padding: 0 15px 0;
+  border: 1px solid transparentize($gray-main, 0.7);
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  @media (min-width: 360px) {
+    padding: 0 28px 0 36px;
+  }
+
+  @include tablet {
+    padding: 0 25px 0 30px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  @include desktop-full {
+    padding-left: 50px;
+  }
+
+  & i.rub {
+    margin-left: 5px;
+    font-style: normal;
+  }
+
+  &--opened {
+    padding-bottom: 89px;
+
+    @include tablet {
+      padding-bottom: 82px;
+    }
+
+    @include tablet {
+      border-top-color: transparent;
+      border-right-color: transparentize($gray-main, 0.7);
+      border-left-color: transparentize($gray-main, 0.7);
+    }
+
+    & .order__summary {
+      margin-bottom: -33px;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    & .order__link-more {
+      bottom: 39px;
+      left: 37px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    & .order__link-more--tab-up {
+
+      @include tablet {
+        &.shown {
+          display: inline;
+          opacity: 1;
+        }
+
+        &.order__link-more--top {
+          top: 0;
+          right: 0;
+          bottom: initial;
+          left: initial;
+
+          @include tablet {
+            top: 22px;
+            right: 40px;
+          }
+        }
+
+        &.order__link-more--bottom {
+          top: initial;
+          right: 39px;
+          bottom: 31px;
+          left: initial;
+        }
+      }
+    }
+  }
+
+  &__summary {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 14px 0 38px 0;
+
+    @include tablet {
+      align-items: center;
+      flex-wrap: nowrap;
+      min-height: 68px;
+      padding: 0;
+    }
+  }
+
+  &__summary-item {
+    @include text(16px, 22px, 400);
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: 0.5s;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+
+    @include desktop-full {
+      font-size: 18px;
+    }
+
+    &:nth-child(1) {
+      width: 71%;
+
+      @include tablet {
+        width: 166px;
+      }
+
+      @include tablet-middle {
+        width: 100%;
+      }
+
+      @include desktop-start {
+        width: 162px;
+      }
+
+      @media (min-width: 1800px) {
+        width: 263px;
+      }
+    }
+
+    &:nth-child(2) {
+      order: 2;
+      width: 71%;
+
+      @include tablet {
+        width: 180px;
+      }
+
+      @include tablet-middle {
+        width: 100%;
+      }
+
+      @include desktop-start {
+        width: 184px;
+      }
+
+      @media (min-width: 1800px) {
+        width: 312px;
+      }
+    }
+
+    &:nth-child(3) {
+      order: 3;
+      width: 29%;
+
+      @include tablet {
+        width: 142px;
+      }
+
+      @include tablet-middle {
+        width: 100%;
+      }
+
+      @include desktop-start {
+        width: 142px;
+      }
+
+      @media (min-width: 1800px) {
+        width: 268px;
+      }
+    }
+
+    &:nth-child(4) {
+      order: 1;
+      width: 29%;
+
+      @include tablet {
+        width: 140px;
+      }
+
+      @include tablet-middle {
+        width: 100%;
+      }
+
+      @include desktop-start {
+        width: 134px;
+      }
+
+      @media (min-width: 1800px) {
+        width: 225px;
+      }
+    }
+
+    &:nth-child(n) {
+      @include tablet {
+        order: 0;
+      }
+    }
+  }
+
+  &__summary-name {
+    @include text(12px, 22px, 400);
+    opacity: 0.5;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__summary-value {
+    margin-top: 4px;
+
+    @include tablet {
+      margin-top: 0;
+    }
+
+    &--col {
+      font-size: 18px;
+      color: $beige;
+    }
+
+    & a {
+      color: $beige;
+    }
+  }
+
+  &__link-more {
+    @include text(14px, 24px, 400);
+    position: absolute;
+    bottom: 11px;
+    left: 37px;
+    color: $beige;
+    cursor: pointer;
+
+    @include tablet {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+    }
+
+    &--tab-up {
+      display: none;
+    }
+  }
+
+  &__inner {
+    display: none;
+
+    @include tablet {
+      padding-top: 11px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    margin-bottom: 27px;
+    padding-bottom: 30px;
+
+    @include tablet {
+      padding-bottom: 35px;
+    }
+
+    @media (min-width: 1800px) {
+      display: flex;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: "";
+      width: calc(100% + 13px);
+      height: 1px;
+      background-color: $gray-main;
+      opacity: 0.3;
+      transform: translate(-50%);
+
+      @media (min-width: 1800px) {
+        width: 100%;
+      }
+    }
+
+    &:nth-last-child(2)::after {
+      @include tablet {
+        content: none;
+      }
+    }
+  }
+
+  &__img {
+    width: 85px;
+    float: left;
+    margin-right: -135px;
+
+    @include tablet {
+      width: 126px;
+      margin-left: 26px;
+      margin-right: 48px;
+    };
+
+    @include desktop-wide {
+      margin-left: 0;
+    }
+  }
+
+  &__info-container {
+    @media (min-width: 1800px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    position: relative;
+    float: left;
+    min-height: 127px;
+    padding-left: 110px;
+
+    @include tablet {
+      min-height: initial;
+      max-width: 390px;
+      padding-left: 0;
+    }
+
+    & .pr-title {
+      margin-top: -6px;
+      margin-bottom: 17px;
+
+      @include tablet {
+        margin-top: 0;
+      }
+
+      & a {
+        @include text(18px, 24px, 400);
+
+        @include tablet {
+          font-size: 24px;
+        }
+
+        @media (min-width: 1800px) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    & .pr-code {
+      margin-bottom: 37px;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    & .show-prop {
+      position: absolute;
+      left: 111px;
+      bottom: -2px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__accordion {
+
+    & .properties-list {
+      margin: 0;
+      margin-top: 21px;
+      margin-bottom: 49px;
+
+      @include tablet {
+        max-width: 390px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+      }
+    }
+
+    & .properties-list li:nth-child(n) {
+      display: none;
+      padding-top: 8px;
+
+      @include tablet {
+        display: block;
+      }
+    }
+
+    & .properties-list .pr-item {
+      width: 167px;
+
+      @media (min-width: 1800px) {
+        width: 207px;
+      }
+    }
+  }
+
+  &__details-container {
+    @media (min-width: 1800px) {
+      padding-top: 10px;
+    }
+  }
+
+  &__details {
+    position: relative;
+    margin-top: 35px;
+
+    @include tablet {
+      margin-top: 25px;
+    }
+  }
+
+  &__final {
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 7px;
+
+    @include tablet {
+      width: auto;
+      float: right;
+      padding-top: 0;
+      padding-right: 10px;
+    }
+
+    &.calc-item-box {
+      margin: 0;
+
+      @include tablet {
+        margin-top: -10px;
+      }
+    }
+
+    & i.rub {
+      margin-left: 7px;
+      font-size: 28px;
+
+      @include tablet {
+        font-size: 30px;
+      }
+    }
+
+    & p {
+      margin-bottom: 17px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    & div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    & span {
+      margin-top: 10px;
+      font-size: 33px;
+
+      @include tablet {
+        font-size: 36px;
+      }
+
+      &:nth-child(1) {
+        margin-right: 5px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 15px;
+        font-size: 22px;
+
+        @include tablet {
+          margin-right: 15px;
+        }
+      }
+
+      &:last-child {
+        margin-left: auto;
+
+        @include tablet {
+          margin-left: 0;
+        }
+      }
+    }
+
+    & .i-box {
+      margin-right: 20px;
+
+      @include tablet {
+        margin-right: 35px;
+        margin-left: 8px;
+      }
+    }
+  }
+}

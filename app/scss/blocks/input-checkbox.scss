@@ -1,0 +1,52 @@
+/* блок с чекбоксом подтверждения */
+
+.input-checkbox {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid $gray-light;
+  }
+
+  &__label {
+    @include text(18px, 27px, 400);
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 100px;
+
+    @include tablet {
+      padding-right: 25px;
+    }
+  }
+
+  & input:checked ~ label {
+
+    &::before {
+      position: absolute;
+      top: 18px;
+      left: 2px;
+      content: '';
+      width: 8px;
+      height: 1px;
+      background-color: rgba(95, 112, 129, 0.9);
+      transform: rotate(56deg);
+    }
+
+    &::after {
+      position: absolute;
+      top: 16px;
+      left: 5px;
+      content: '';
+      width: 12px;
+      height: 1px;
+      background-color: rgba(95, 112, 129, 0.9);
+      transform: rotate(-60deg);
+    }
+  }
+}

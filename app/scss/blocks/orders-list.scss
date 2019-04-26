@@ -1,0 +1,123 @@
+/* страница ИСТОРИЯ ЗАКАЗОВ, общие стили */
+
+.orders-list {
+  width: 100%;
+  padding-top: 12px;
+
+  @include tablet {
+    margin-bottom: 44px;
+  }
+
+  @include laptop {
+    max-width: 672px;
+  }
+
+  @media (min-width: 1800px) {
+    max-width: initial;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: -9px;
+    }
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info {
+    display: none;
+
+    @include tablet {
+      @include text(18px, 40px, 400);
+      display: flex;
+      width: 100%;
+      padding: 4px 30px;
+      background-color: transparentize($tan, 0.85);
+    }
+
+    @include desktop-full {
+      padding: 0 45px 3px 50px;
+    }
+  }
+
+  &__info-item {
+    width: 25%;
+
+    &:nth-child(1) {
+
+      @include tablet {
+        width: 166px;
+      }
+
+      @include tablet-middle {
+        width: 100%;
+      }
+
+      @include desktop-start {
+        width: 166px;
+      }
+
+      @media (min-width: 1800px) {
+        width: 268px;
+      }
+    }
+
+    &:nth-child(2) {
+      @include tablet {
+        width: 180px;
+      }
+
+      @include tablet-middle {
+        width: 100%;
+      }
+
+      @include desktop-start {
+        width: 180px;
+      }
+
+      @media (min-width: 1800px) {
+        width: 310px;
+      }
+    }
+
+    &:nth-child(3) {
+      @include tablet {
+        width: 142px;
+      }
+
+      @include tablet-middle {
+        width: 100%;
+      }
+
+      @include desktop-start {
+        width: 142px;
+      }
+
+      @media (min-width: 1800px) {
+        width: 268px;
+      }
+    }
+
+    &:nth-child(4) {
+      @include tablet {
+        width: 130px;
+      }
+
+      @include tablet-middle {
+        width: 100%;
+      }
+
+      @include desktop-start {
+        width: 130px;
+      }
+
+      @media (min-width: 1800px) {
+        width: 225px;
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+/* переменные */
+
+$width-mobile: 320px;
+$width-mobile-wide: 600px;
+$width-tablet: 768px;
+$width-tablet-middle: 920px;
+$width-desktop-start: 1024px;
+$width-laptop: 1366px;
+$width-desktop-wide: 1800px;
+$width-desktop-full: 1920px;
+
+$white: #ffffff;
+$beige: #ddab9e;
+$tan: #cea89c;
+$gray-main: #5f7081;
+$gray-light: #d9d9d9;
+
+/* миксины */
+
+@mixin text ($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin mobile {
+  @media (min-width: #{$width-mobile}) {
+    @content;
+  }
+}
+
+@mixin mobile-wide {
+  @media (min-width: #{$width-mobile-wide}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$width-tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet-middle {
+  @media (min-width: #{$width-tablet-middle}) {
+    @content;
+  }
+}
+
+@mixin desktop-start {
+  @media (min-width: #{$width-desktop-start}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$width-laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop-wide {
+  @media (min-width: #{$width-desktop-wide}) {
+    @content;
+  }
+}
+
+@mixin desktop-full {
+  @media (min-width: #{$width-desktop-full}) {
+    @content;
+  }
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-title {
+
+  @include tablet {
+    @include text(30px, 48px, 400);
+    position: relative;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      content: '';
+      width: 34px;
+      height: 1px;
+      background-color: $beige;
+    }
+
+    &::before {
+      left: -60px;
+    }
+
+    &::after {
+      right: -60px;
+    }
+  }
+}
+
+.no-float {
+  float: none;
+}

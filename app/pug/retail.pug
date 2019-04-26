@@ -1,0 +1,27 @@
+doctype html
+html(lang='ru', class="no-js")
+	include includes/head
+	include mixins/image
+
+	body
+		include modules/header
+
+		section.wrapper
+			.breadcrumb__container.hidden-xs
+				.container
+					ul.breadcrumb
+						li
+							a(href="#") Главная
+						li Купить в розницу
+			//-.breadcrumb__container
+						
+			include modules/retail-page
+		// /.wrapper
+
+		include modules/footer-child
+		include modules/modal
+		include includes/foot
+		include includes/js-retail
+
+
+

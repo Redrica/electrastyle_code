@@ -1,0 +1,45 @@
+/* блок загрузки лого магазина */
+
+.img-upload {
+
+  &__place {
+    position: relative;
+    width: 200px;
+    height: 157px;
+    margin: 0 auto 20px;
+    border: 1px solid $gray-light;
+    color: transparentize($gray-main, 0.5);
+    overflow: hidden;
+
+    &.no-image::before {
+      content: "Логотип компании";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 120px;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__btn {
+    width: 200px;
+    margin: 0 auto 18px;
+    padding: 9px 20px 13px;
+    color: $beige;
+    background-color: $white;
+    border: 1px solid $beige;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $beige;
+      color: $white;
+    }
+  }
+
+  &__tip {
+    margin: 0;
+    text-align: center;
+    opacity: 0.5;
+  }
+}
